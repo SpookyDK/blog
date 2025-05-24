@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: A place of experimentaiton
 ---
-This blog i going to be awesome
+Microcontrollers to 3D rendering and blinking lights 
 
