@@ -1,9 +1,8 @@
 ---
 layout: home
-title: A place of experimentation
+title: A Place of Experimentation
 ---
-
-Microcontrollers to 3D rendering and blinking lights.
+By a Computer Engineering Student
 
 ---
 
