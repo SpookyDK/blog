@@ -2,3 +2,6 @@ theme: minima
 title: SpookyDKs projects
 author: Esben Jørgensen
 description: Blog for all my projects that need it
+kramdown:
+  input: GFM
+
