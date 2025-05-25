@@ -49,7 +49,7 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="what-is-the-maix-dock-m1w">What is the Maix Dock M1W?</h1>
-<p><img src="/assets/Maix-dock.jpg" alt="Maix Dock M1W" title="test" style="width:60%;" /></p>
+<p><img src="/assets/Maix-dock.jpg" alt="Maix Dock M1W" style="width:60%;" /></p>
 
 <p>The Maix Dock M1W is a small RISC-V based Micro-controller, with the main point of interest being the integrated NPU called KPU. 
 The board is based around the Kendryte K210 chip, which comes with 2 64bit RICS-V cores clocked at 400MHz and a dedicated NPU. 
@@ -106,11 +106,52 @@ This makes the M1W an interresting product for low-power object detection.</p>
     <tr>
         <td> TF card slot:</td>
         <td> Multimedia resource expansion, support large-capacity storage</td>
-        <td> depends on kit</td>
+        <td> Depends on kit</td>
     </tr>
-    
-
 </table>
+
+<h1 id="m1w-unboxing">M1W Unboxing</h1>
+<p>I ordered the M1W from Aliexpress and it arrived in a small cardboard box with a plastic enclosure containing: the M1W itself, the 2.4 inch screen, a small camera already attached, an antenna and a USB-C  to Micro-b adapter. 
+<img src="/assets/M1W-unbloxed.png" alt="Platic enclosure" style="width:80%;" /></p>
+<h1 id="m1w-initial-power-on">M1W Initial Power On</h1>
+<p>An inital power on of the M1W originally showed a welcome MaixDuino welcome message on the display, but when trying to recreate it for a picture the display only shows white</p>
+
+<p><img src="/assets/M1W-White.png" alt="Platic enclosure" style="width:80%;" /></p>
+<h1 id="programming-on-the-m1w">Programming on the M1W</h1>
+<p>When trying to find guides for the M1W especially for programming low-level C code, most links from official sources are either on chinese or points to non existent pages. 
+However, Platformio has the M1W-board listed as <em>sipeed-maix-one-dock</em>, and is compatible with the arduino framework.<br />
+So for an easy test I wrote a simple script making the builtin led blink.  SUCCESS!!!<br />
+The platformio.ini and main.cpp code can be seen below</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#platformio.ini</span>
+
+    <span class="p">[</span><span class="n">env</span><span class="ss">:sipeed</span><span class="o">-</span><span class="n">maixduino</span><span class="p">]</span>
+    <span class="n">platform</span> <span class="o">=</span> <span class="n">kendryte210</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">sipeed</span><span class="o">-</span><span class="n">maix</span><span class="o">-</span><span class="n">one</span><span class="o">-</span><span class="n">dock</span>
+    <span class="n">framework</span> <span class="o">=</span> <span class="n">arduino</span>
+    <span class="n">upload_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+    <span class="n">monitor_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#main.cpp
+</span>
+    <span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
+</span>
+    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Starting LED blink"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Blink!"</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
 
   </div><a class="u-url" href="/blog/2025/05/24/setup.html" hidden></a>
 </article>
