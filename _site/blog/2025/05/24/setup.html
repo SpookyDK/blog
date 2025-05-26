@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>C code on Maix Dock M1w | SpookyDKs projects</title>
+<title>Sipeed Maix Dock M1W | SpookyDKs projects</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="C code on Maix Dock M1w" />
+<meta property="og:title" content="Sipeed Maix Dock M1W" />
 <meta name="author" content="Esben Jørgensen" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="What is the Maix Dock M1W?" />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-05-24T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="C code on Maix Dock M1w" />
+<meta property="twitter:title" content="Sipeed Maix Dock M1W" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Esben Jørgensen"},"dateModified":"2025-05-24T00:00:00+02:00","datePublished":"2025-05-24T00:00:00+02:00","description":"What is the Maix Dock M1W?","headline":"C code on Maix Dock M1w","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/05/24/setup.html"},"url":"http://localhost:4000/blog/2025/05/24/setup.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Esben Jørgensen"},"dateModified":"2025-05-24T00:00:00+02:00","datePublished":"2025-05-24T00:00:00+02:00","description":"What is the Maix Dock M1W?","headline":"Sipeed Maix Dock M1W","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/05/24/setup.html"},"url":"http://localhost:4000/blog/2025/05/24/setup.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="SpookyDKs projects" /></head>
 <body><header class="site-header" role="banner">
@@ -41,7 +41,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">C code on Maix Dock M1w </h1>
+    <h1 class="post-title p-name" itemprop="name headline">Sipeed Maix Dock M1W</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2025-05-24T00:00:00+02:00" itemprop="datePublished">May 24, 2025
       </time></p>
@@ -111,17 +111,17 @@ This makes the M1W an interresting product for low-power object detection.</p>
 </table>
 
 <h1 id="m1w-unboxing">M1W Unboxing</h1>
-<p>I ordered the M1W from Aliexpress and it arrived in a small cardboard box with a plastic enclosure containing: the M1W itself, the 2.4 inch screen, a small camera already attached, an antenna and a USB-C  to Micro-b adapter. 
-<img src="/assets/M1W-unbloxed.png" alt="Platic enclosure" style="width:80%;" /></p>
+<p>I ordered the M1W from Aliexpress and it arrived in a small cardboard box with a plastic enclosure containing: the M1W itself, the 2.4 inch screen, a small camera already attached, an antenna and a USB-C  to Micro-b adapter.<br />
+<img src="/assets/M1W-unbloxed.png" alt="Platic enclosure" style="width:100%;" /></p>
 <h1 id="m1w-initial-power-on">M1W Initial Power On</h1>
 <p>An inital power on of the M1W originally showed a welcome MaixDuino welcome message on the display, but when trying to recreate it for a picture the display only shows white</p>
 
-<p><img src="/assets/M1W-White.png" alt="Platic enclosure" style="width:80%;" /></p>
+<p><img src="/assets/M1W-White.png" alt="Platic enclosure" style="width:100%;" /></p>
 <h1 id="programming-on-the-m1w">Programming on the M1W</h1>
 <p>When trying to find guides for the M1W especially for programming low-level C code, most links from official sources are either on chinese or points to non existent pages. 
 However, Platformio has the M1W-board listed as <em>sipeed-maix-one-dock</em>, and is compatible with the arduino framework.<br />
 So for an easy test I wrote a simple script making the builtin led blink.  SUCCESS!!!<br />
-The platformio.ini and main.cpp code can be seen below</p>
+The <em>platformio.ini</em> and <em>main.cpp</em> code can be seen below</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#platformio.ini</span>
 
@@ -152,6 +152,23 @@ The platformio.ini and main.cpp code can be seen below</p>
         <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Blink!"</span><span class="p">);</span>
     <span class="p">}</span>
 </code></pre></div></div>
+<h1 id="serial-communication-with-m1w">Serial communication with M1W</h1>
+<p>Serial communication is crucial when trying to debug anything on Micro-controllers, so to make sure Serial communication is working properly I added the <em>Serial.println(“Blink!”);</em> to the previous code. This however did not work out of the box, when trying to monitor the serial connection via <em>platformio device monitor</em> nothing would show up, and the LED would stop blinking?.<br />
+After doing some research I found that the M1W possibly was entering boot/ISP mode, as if i was trying to flash new software to it.
+This was easily fixed by disabling DTR and RTS by adding <em>monitor_rts = 0</em> and <em>monitor_dtr = 0</em> to <em>platformio.ini</em></p>
+<h1 id="k210-vs-esp32-cpu-performance">K210 vs ESP32 CPU Performance</h1>
+<p>The K210s CPU is clocked alot higher than that of the ESP32, so I was curios about what the performance difference could be?<br />
+Especially with the K210 supporting <em>FP64</em> and having a much larger amount of builtin SRAM. 
+For a quick benchmarking of the boards I did a simple and mostly theoretical benchmark, measuring the time it took to do 10
+million addtions, multiplications and divisions, for <em>INT64</em> <em>Float32</em> and <em>Float64</em>, on a single core, then converting the results to million operations per second. Results can be seen below, where the K210 is on average 2.5x faster compared to the ESP32.<br />
+<img src="/assets/K210vESP32-mops.svg" alt="Benchmark" style="width:100%;" />
+With the K210 having FP64 implemented in hardware, and the ESP32 relying on software, it is disappointing to see that the FP64 performance isn’t much greater than that of the ESP32. This benchmark only focuses on raw performance that isn’t touching the IO.</p>
+<h1 id="k210-vs-esp32-memory-performance">K210 vs ESP32 Memory Performance</h1>
+<p>With the CPU performance of the K210 being impressive but still disappointing, I wanted to know how big a difference the larger SRAM capacity could have on performance. For this lets try sorting arrays of vaious sizes
+The speed of both read and write was tested by allocating a certain buffer size and written and reading from it.</p>
+
+<p><img src="/assets/K210vsESP32ReadWrite.svg" alt="Benchmarkmemory" style="width:100%;" /><br />
+As can been seen on the image above, the K210 outperforms the ESP32 by a wide margin, with write speeds being consistent up to over 5MB, were the ESP32 falls of after 110KB, because everything over that requires the ESP32 to use external RAM.</p>
 
   </div><a class="u-url" href="/blog/2025/05/24/setup.html" hidden></a>
 </article>
