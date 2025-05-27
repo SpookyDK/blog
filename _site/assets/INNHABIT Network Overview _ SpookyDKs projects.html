@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>INNHABIT Network Overview | SpookyDKs projects</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="INNHABIT Network Overview">
+<meta name="author" content="Esben Jørgensen">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons as installed can only be connected to via Wi-Fi. This makes deployment for flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTP ```ruby #platformio.ini">
+<meta property="og:description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons as installed can only be connected to via Wi-Fi. This makes deployment for flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTP ```ruby #platformio.ini">
+<link rel="canonical" href="http://localhost:4000/blog/2025/05/26/innhabit-network.html">
+<meta property="og:url" content="http://localhost:4000/blog/2025/05/26/innhabit-network.html">
+<meta property="og:site_name" content="SpookyDKs projects">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-05-26T00:00:00+02:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="INNHABIT Network Overview">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Esben Jørgensen"},"dateModified":"2025-05-26T00:00:00+02:00","datePublished":"2025-05-26T00:00:00+02:00","description":"What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons as installed can only be connected to via Wi-Fi. This makes deployment for flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTP ```ruby #platformio.ini","headline":"INNHABIT Network Overview","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"},"url":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="INNHABIT%20Network%20Overview%20_%20SpookyDKs%20projects_files/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="SpookyDKs projects"></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="http://127.0.0.1:4000/">SpookyDKs projects</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="http://127.0.0.1:4000/">A Place of Experimentation</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">INNHABIT Network Overview</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-05-26T00:00:00+02:00" itemprop="datePublished">May 26, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="what-is-innhabit">What is INNHABIT</h1>
+<p>INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance 
+at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a
+ Central Aggregation Server.
+<img src="INNHABIT%20Network%20Overview%20_%20SpookyDKs%20projects_files/SystemDiagramAlternate.png" alt="SystemOverview" style="width:100%;"></p>
+<blockquote>
+  <h4 id="goal-of-networking-for-innhabit"><strong>Goal of Networking for INNHABIT</strong></h4>
+  <ul>
+    <li>Send Entry/Exit events from Jetson to Aggregation Server</li>
+    <li>Store Entry/Exit events for further analysis</li>
+    <li>Update setting on Jetson via Aggregation Server</li>
+    <li>Serve a Web Dashboard for detailed statics</li>
+    <li>Serve focused statics to existing digital signage</li>
+  </ul>
+</blockquote>
+
+<h1 id="entryexit-events">Entry/Exit events</h1>
+<h3 id="from-jetson-to-aggregation-server">From Jetson To Aggregation Server</h3>
+<p>The Jetsons as installed can only be connected to via Wi-Fi. This makes deployment for flexible and reduces installation costs.<br>
+The Jetsons are connected to a <em>Word-Wide-Web</em> connected network, seperate from <em>eduroam</em>. Bypassing alot of issues caused by the security system around <em>eduroam</em>. The Jetsons uploads Entry/Exit events via HTTP<em>s</em> to the Aggregation server hosted with the <em>DNS</em> adress INNHABIT.dk.
+The Jetsons uses <em>libcurl</em> for sending HTTP</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#platformio.ini</span>
+
+    <span class="p">[</span><span class="n">env</span><span class="ss">:sipeed</span><span class="o">-</span><span class="n">maixduino</span><span class="p">]</span>
+    <span class="n">platform</span> <span class="o">=</span> <span class="n">kendryte210</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">sipeed</span><span class="o">-</span><span class="n">maix</span><span class="o">-</span><span class="n">one</span><span class="o">-</span><span class="n">dock</span>
+    <span class="n">framework</span> <span class="o">=</span> <span class="n">arduino</span>
+    <span class="n">upload_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+    <span class="n">monitor_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#main.cpp
+</span>
+    <span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
+</span>
+    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Starting LED blink"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Blink!"</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+  </div><a class="u-url" href="http://127.0.0.1:4000/blog/2025/05/26/innhabit-network.html" hidden=""></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">SpookyDKs projects</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Esben Jørgensen</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Blog for all my projects that need it</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body></html>
