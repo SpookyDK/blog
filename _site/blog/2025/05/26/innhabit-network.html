@@ -8,8 +8,8 @@
 <meta property="og:title" content="INNHABIT Network Overview" />
 <meta name="author" content="Esben Jørgensen" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTPs PUT request to INNHABIT at designted API endpoints. API endpoints for Jetson INNHABIT.dk/api/v1/events/entries INNHABIT.dk/api/v1/events/exits For handling the all API events the Jetsons software has a dedicated thread and class ApiHandler. ApiHandler works of a queue of API events ensuring no events are missed or stalls the system. libcurl is designed to simplify the integration of HTTPs, and the code for contruction and sending a HTTPs request with JSON body is seen below. ```c++ #ApiHandler:sendPostRequest" />
-<meta property="og:description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTPs PUT request to INNHABIT at designted API endpoints. API endpoints for Jetson INNHABIT.dk/api/v1/events/entries INNHABIT.dk/api/v1/events/exits For handling the all API events the Jetsons software has a dedicated thread and class ApiHandler. ApiHandler works of a queue of API events ensuring no events are missed or stalls the system. libcurl is designed to simplify the integration of HTTPs, and the code for contruction and sending a HTTPs request with JSON body is seen below. ```c++ #ApiHandler:sendPostRequest" />
+<meta name="description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson remotely from Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Jetson Internal architecture The software of the Jetson implement multiple threads each having a class and task assigned. A simplifyed thread description and diagram can be seen below: The figure shows all main threads and the shared resourses between them. The main program flow is a follows FrameCapturer Thread Captures frames from camera and adds them to frameQueue Detection Thread Takes frames from frameQueue, runs ML and tracking, calls Api Handler Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue, runs ML and tracking, calls Api Hander Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue. Display Thread Takes frames from displayQueue and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. DevicePoller Thread uses Api Handler Thread to poll Aggregation server for updated settings Api Handler Thread handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling." />
+<meta property="og:description" content="What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson remotely from Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Jetson Internal architecture The software of the Jetson implement multiple threads each having a class and task assigned. A simplifyed thread description and diagram can be seen below: The figure shows all main threads and the shared resourses between them. The main program flow is a follows FrameCapturer Thread Captures frames from camera and adds them to frameQueue Detection Thread Takes frames from frameQueue, runs ML and tracking, calls Api Handler Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue, runs ML and tracking, calls Api Hander Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue. Display Thread Takes frames from displayQueue and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. DevicePoller Thread uses Api Handler Thread to poll Aggregation server for updated settings Api Handler Thread handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling." />
 <link rel="canonical" href="http://localhost:4000/blog/2025/05/26/innhabit-network.html" />
 <meta property="og:url" content="http://localhost:4000/blog/2025/05/26/innhabit-network.html" />
 <meta property="og:site_name" content="SpookyDKs projects" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="INNHABIT Network Overview" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Esben Jørgensen"},"dateModified":"2025-05-26T00:00:00+02:00","datePublished":"2025-05-26T00:00:00+02:00","description":"What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson via Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Entry/Exit events From Jetson To Aggregation Server The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs. The Jetsons are connected to a Word-Wide-Web connected network, seperate from eduroam. Bypassing alot of issues caused by the security system around eduroam. The Jetsons uploads Entry/Exit events via HTTPs to the Aggregation server hosted with the DNS adress INNHABIT.dk. The Jetsons uses libcurl for sending HTTPs PUT request to INNHABIT at designted API endpoints. API endpoints for Jetson INNHABIT.dk/api/v1/events/entries INNHABIT.dk/api/v1/events/exits For handling the all API events the Jetsons software has a dedicated thread and class ApiHandler. ApiHandler works of a queue of API events ensuring no events are missed or stalls the system. libcurl is designed to simplify the integration of HTTPs, and the code for contruction and sending a HTTPs request with JSON body is seen below. ```c++ #ApiHandler:sendPostRequest","headline":"INNHABIT Network Overview","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"},"url":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Esben Jørgensen"},"dateModified":"2025-05-26T00:00:00+02:00","datePublished":"2025-05-26T00:00:00+02:00","description":"What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson remotely from Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Jetson Internal architecture The software of the Jetson implement multiple threads each having a class and task assigned. A simplifyed thread description and diagram can be seen below: The figure shows all main threads and the shared resourses between them. The main program flow is a follows FrameCapturer Thread Captures frames from camera and adds them to frameQueue Detection Thread Takes frames from frameQueue, runs ML and tracking, calls Api Handler Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue, runs ML and tracking, calls Api Hander Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue. Display Thread Takes frames from displayQueue and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. DevicePoller Thread uses Api Handler Thread to poll Aggregation server for updated settings Api Handler Thread handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.","headline":"INNHABIT Network Overview","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"},"url":"http://localhost:4000/blog/2025/05/26/innhabit-network.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="SpookyDKs projects" /></head>
 <body><header class="site-header" role="banner">
@@ -56,15 +56,35 @@
   <ul>
     <li>Send Entry/Exit events from Jetson to Aggregation Server</li>
     <li>Store Entry/Exit events for further analysis</li>
-    <li>Update setting on Jetson via Aggregation Server</li>
+    <li>Update setting on Jetson remotely from Aggregation Server</li>
     <li>Serve a Web Dashboard for detailed statics</li>
     <li>Serve focused statics to existing digital signage</li>
   </ul>
 </blockquote>
 
-<h1 id="entryexit-events">Entry/Exit events</h1>
-<h3 id="from-jetson-to-aggregation-server">From Jetson To Aggregation Server</h3>
-<p>The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs.<br />
+<h1 id="jetson-internal-architecture">Jetson Internal architecture</h1>
+<p>The software of the Jetson implement multiple threads each having a class and task assigned.<br />
+A simplifyed thread description and diagram can be seen below:<br />
+<img src="/assets/ThreadDiagram.png" alt="SystemOverview" style="width:100%;" />
+The figure shows all main threads and the shared resourses between them.
+The main program flow is a follows</p>
+<blockquote>
+  <ul>
+    <li><strong>FrameCapturer Thread</strong> Captures frames from camera and adds them to <em>frameQueue</em></li>
+    <li><strong>Detection Thread</strong> Takes frames from <strong>frameQueue</strong>, runs ML and tracking, calls <strong>Api Handler Thread</strong> if Entry/Exit is detected. Adds image with detection and tracking to <strong>displayQueue</strong>, runs ML and tracking, calls <strong>Api Hander Thread</strong> if Entry/Exit is detected. Adds image with detection and tracking to <strong>displayQueue</strong>.</li>
+    <li><strong>Display Thread</strong> Takes frames from <strong>displayQueue</strong> and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream.</li>
+    <li><strong>DevicePoller Thread</strong> uses <strong>Api Handler Thread</strong> to poll <strong>Aggregation server</strong> for updated settings</li>
+    <li><strong>Api Handler Thread</strong> handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.</li>
+  </ul>
+
+</blockquote>
+
+<h3 id="sending-entryexit-events">Sending Entry/Exit events</h3>
+<p>An Entry/Exit event is sent everytime it is detected that a person has entered or exited.
+The sending of these event is handled by a dedicated thread <em>ApiHandler</em>.<br />
+The flow of such and event can be seen below:
+<img src="/assets/network_person_event_diagram.png" alt="SystemOverview" style="width:100%;" />
+The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs.<br />
 The Jetsons are connected to a <em>Word-Wide-Web</em> connected network, seperate from <em>eduroam</em>. Bypassing alot of issues caused by the security system around <em>eduroam</em>. The Jetsons uploads Entry/Exit events via HTTP<em>s</em> to the Aggregation server hosted with the <em>DNS</em> adress <em>INNHABIT.dk</em>.
 The Jetsons uses <em>libcurl</em> for sending HTTP<em>s</em> PUT request to <em>INNHABIT</em> at designted <em>API</em> endpoints.</p>
 <blockquote>
@@ -133,26 +153,27 @@ The Jetsons uses <em>libcurl</em> for sending HTTP<em>s</em> PUT request to <em>
     <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
+<p>The HTTP request contructed from this example looks something like:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">POST</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">events</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="o">:</span> <span class="n">innhabit</span><span class="p">.</span><span class="n">dk</span>
+<span class="n">Authorization</span><span class="o">:</span> <span class="n">Bearer</span> <span class="o">&lt;</span><span class="n">GoodEncryptedKeyForSpecificEntrance</span><span class="o">&gt;</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="o">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#main.cpp
-</span>
-    <span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
-</span>
-    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
-        <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
-        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{}</span>
-        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Starting LED blink"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Blink!"</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="p">{</span>
+  <span class="s">"timestamp"</span><span class="o">:</span> <span class="s">"2025-05-29T12:34:56Z"</span>
+<span class="p">}</span>
 </code></pre></div></div>
+
+<p>With a HTTP POST request sent to the server, what then happens when it’s recieved?</p>
+<h1 id="aggregation-server">Aggregation Server</h1>
+<p>The internal architecture is run inside a <a href="https://www.docker.com/"><strong>Docker</strong></a> network with multiple containers handling different parts of the system.<br />
+The <em>Docker</em> network can be seen below: <em>All arrows a bi-directional</em>
+<img src="/assets/DockerDiagram.png" alt="SystemOverview" style="width:100%;" />
+As can be seen on the image above, the <em>Docker</em> network consists of 4 containers described below:</p>
+<h3 id="nginx">NGINX</h3>
+<p><a href="https://nginx.org/"><strong>NGINX</strong></a> can be seen as the front end of the system, being the only container able of direct communication with clients.
+INGINX servers client with all static resourses such as HTML and Images, thenpasses request to Gunicorn if any logic needs to be handles, such as permissions or dynamically updating charts.</p>
+
 
   </div><a class="u-url" href="/blog/2025/05/26/innhabit-network.html" hidden></a>
 </article>

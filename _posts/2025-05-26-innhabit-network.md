@@ -10,12 +10,28 @@ INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNO
 > #### **Goal of Networking for INNHABIT**
 > - Send Entry/Exit events from Jetson to Aggregation Server
 > - Store Entry/Exit events for further analysis
-> - Update setting on Jetson via Aggregation Server
+> - Update setting on Jetson remotely from Aggregation Server
 > - Serve a Web Dashboard for detailed statics
 > - Serve focused statics to existing digital signage
   
-#  Entry/Exit events 
-### From Jetson To Aggregation Server
+# Jetson Internal architecture
+The software of the Jetson implement multiple threads each having a class and task assigned.  
+A simplifyed thread description and diagram can be seen below:  
+![SystemOverview]({{ site.baseurl }}/assets/ThreadDiagram.png){: style="width:100%;" }
+The figure shows all main threads and the shared resourses between them.
+The main program flow is a follows
+> - **FrameCapturer Thread** Captures frames from camera and adds them to *frameQueue*  
+> - **Detection Thread** Takes frames from **frameQueue**, runs ML and tracking, calls **Api Handler Thread** if Entry/Exit is detected. Adds image with detection and tracking to **displayQueue**, runs ML and tracking, calls **Api Hander Thread** if Entry/Exit is detected. Adds image with detection and tracking to **displayQueue**.
+> - **Display Thread** Takes frames from **displayQueue** and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. 
+> - **DevicePoller Thread** uses **Api Handler Thread** to poll **Aggregation server** for updated settings
+> - **Api Handler Thread** handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.
+>   
+
+### Sending Entry/Exit events
+An Entry/Exit event is sent everytime it is detected that a person has entered or exited.
+The sending of these event is handled by a dedicated thread *ApiHandler*.  
+The flow of such and event can be seen below:
+![SystemOverview]({{ site.baseurl }}/assets/network_person_event_diagram.png){: style="width:100%;" }
 The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs.  
 The Jetsons are connected to a *Word-Wide-Web* connected network, seperate from *eduroam*. Bypassing alot of issues caused by the security system around *eduroam*. The Jetsons uploads Entry/Exit events via HTTP*s* to the Aggregation server hosted with the *DNS* adress *INNHABIT.dk*.
 The Jetsons uses *libcurl* for sending HTTP*s* PUT request to *INNHABIT* at designted *API* endpoints.
@@ -82,25 +98,25 @@ json ApiHandler::sendPostRequest(const std::string& endpoint, const json& data) 
     return result;
 }
 ```
-
-
+The HTTP request contructed from this example looks something like:  
 ```c++
-#main.cpp
+POST /api/v1/events/entries/ HTTP/1.1
+Host: innhabit.dk
+Authorization: Bearer <GoodEncryptedKeyForSpecificEntrance>
+Content-Type: application/json
 
-    #include <Arduino.h>
-
-    void setup() {
-        pinMode(LED_BUILTIN, OUTPUT);
-        Serial.begin(115200);
-        while (!Serial) {}
-        Serial.println("Starting LED blink");
-    }
-
-    void loop() {
-        digitalWrite(LED_BUILTIN, HIGH);
-        delay(500);
-        digitalWrite(LED_BUILTIN, LOW);
-        delay(500);
-        Serial.println("Blink!");
-    }
+{
+  "timestamp": "2025-05-29T12:34:56Z"
+}
 ```
+
+With a HTTP POST request sent to the server, what then happens when it's recieved?  
+# Aggregation Server
+The internal architecture is run inside a [**Docker**](https://www.docker.com/) network with multiple containers handling different parts of the system.  
+The *Docker* network can be seen below: *All arrows a bi-directional*
+![SystemOverview]({{ site.baseurl }}/assets/DockerDiagram.png){: style="width:100%;" }
+As can be seen on the image above, the *Docker* network consists of 4 containers described below:  
+### NGINX
+[**NGINX**](https://nginx.org/) can be seen as the front end of the system, being the only container able of direct communication with clients.
+INGINX servers client with all static resourses such as HTML and Images, thenpasses request to Gunicorn if any logic needs to be handles, such as permissions or dynamically updating charts.
+

@@ -169,6 +169,27 @@ The speed of both read and write was tested by allocating a certain buffer size 
 
 <p><img src="/assets/K210vsESP32ReadWrite.svg" alt="Benchmarkmemory" style="width:100%;" /><br />
 As can been seen on the image above, the K210 outperforms the ESP32 by a wide margin, with write speeds being consistent up to over 5MB, were the ESP32 falls of after 110KB, because everything over that requires the ESP32 to use external RAM.</p>
+<h1 id="memory-impact-on-performance">Memory Impact on Performance</h1>
+<p>The K210 has a much more fast memory to use, whick makes sense with the point of being able to do live image processing, requiring multiple frames to be kept in memory while processing. To measure the difference when running simple image manipulation tasks, square images between 128-1250 was allocated, filled with a gradiant and downscaled to quarter size. Excution times can be improved by using dedicated libraries and not relying on standard Arduino SDK.</p>
+
+<p><img src="/assets/K210vESP32img.svg" alt="Benchmarkimg" style="width:100%;" /></p>
+<h1 id="development-with-kendryte-standalone-sdk">Development with Kendryte-standalone-sdk</h1>
+<p>To <em>Arduino framework</em> doesn’t have access to all the feature of the M1W, to get this the Kendryte-standalone-sdk is needed.
+The sdk is used by default when initing a platformio project for the M1W, and the sdk can be found on github <a href="https://github.com/kendryte/kendryte-standalone-sdk/tree/develop">SDK Github Page</a> with some documentation here <a href="https://loboris.eu/sipeed/kendryte_standalone_programming_guide_v0.3.0.zh-CN.en.pdf">Documentation</a>.
+Most funcitons seems documented, and a simple hello world example is included in the <em>src/</em> folder.
+Running the program writes <em>“hello world”</em> from both cores, with output looking like this.</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Core</span> <span class="mi">0</span> <span class="n">Hello</span> <span class="n">world</span>
+<span class="n">Core</span> <span class="mi">1</span> <span class="n">Hello</span> <span class="n">world</span>
+</code></pre></div></div>
+<p>Now that the <em>Arduino framework</em> is no longer used, the program is written in standard c, and printin via serial is a simple as:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bsp.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sysctl.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
   </div><a class="u-url" href="/blog/2025/05/24/setup.html" hidden></a>
 </article>
