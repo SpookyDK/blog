@@ -35,9 +35,8 @@ The flow of such and event can be seen below:
 The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs.  
 The Jetsons are connected to a *Word-Wide-Web* connected network, seperate from *eduroam*. Bypassing alot of issues caused by the security system around *eduroam*. The Jetsons uploads Entry/Exit events via HTTP*s* to the Aggregation server hosted with the *DNS* adress *INNHABIT.dk*.
 The Jetsons uses *libcurl* for sending HTTP*s* PUT request to *INNHABIT* at designted *API* endpoints.
-> #### **API endpoints for Jetson**
-> - INNHABIT.dk/api/v1/events/entries
-> - INNHABIT.dk/api/v1/events/exits
+## **API endpoints for Jetson**
+![API]({{ site.baseurl }}/assets/EndpointDiagram.png){: style="width:100%;" }
   
 For handling the all *API* events the Jetsons software has a dedicated thread and class *ApiHandler*.
 *ApiHandler* works of a queue of *API* events ensuring no events are missed or stalls the system.
@@ -119,4 +118,18 @@ As can be seen on the image above, the *Docker* network consists of 4 containers
 ### NGINX
 [**NGINX**](https://nginx.org/) can be seen as the front end of the system, being the only container able of direct communication with clients.
 INGINX servers client with all static resourses such as HTML and Images, thenpasses request to Gunicorn if any logic needs to be handles, such as permissions or dynamically updating charts.
+### Gunicorn / Django
+Gunicorn is where the brain of the Webserver is hosted, Gunicorn hosts a Django Webserver and then handles communication between IGINX and Django.
+Django then handles database communication and all dynamic content on the Webserver.
+Some of the dynamic sites is mainly the admindashboard and insights page seen below:  
+![Dashboard]({{ site.baseurl }}/assets/admindashboard.png){: style="width:100%;" }
+![Insight]({{ site.baseurl }}/assets/insights.png){: style="width:49%;" }
+![Insight]({{ site.baseurl }}/assets/PublicInsight.png){: style="width:49%;" }
+### PostgreSQL
+PostgreSQL is the database used for storing all the Entry/Exit events, it is hosted in its own docker container for easy integration, and communicates with Gunicorn. The database is contructed with Multiple tables which can be seen on the Figure Below:  
+![DataBase]({{ site.baseurl }}/assets/innhabit-db.png){: style="width:100%;" }
 
+### Valkey
+Valkey is a key/value datastore used to store password API keys, valued for its security and easy integration with Django and Gunicorn.
+The API keys generated, as shown in the figure below, consist of an easy-to-read identifier, a prefix to distinguish the key, and a secret 64-character long key that is randomly generated. This randomness is why salting is not necessary.
+![APIKey]({{ site.baseurl }}/assets/APISections.png){: style="width:100%;" }
