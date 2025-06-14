@@ -1,0 +1,142 @@
+<h1 id="what-is-the-maix-dock-m1w">What is the Maix Dock M1W?</h1>
+<p><img src="/assets/Maix-dock.jpg" alt="Maix Dock M1W" style="width:60%;" /></p>
+
+<p>The Maix Dock M1W is a small RISC-V based Micro-controller, with the main point of interest being the integrated NPU called KPU. 
+The board is based around the Kendryte K210 chip, which comes with 2 64bit RICS-V cores clocked at 400MHz and a dedicated NPU. 
+The NPU is marketed with the ability to perform 1TOPS at INT8 precision.<br />
+This makes the M1W an interresting product for low-power object detection.</p>
+
+<p>The specifictions for the M1W is as follows:<br />
+<em>With ESP32-WROOM for comparision</em></p>
+
+<table>
+    <tr>
+        <th>Item</th>
+        <th>M1W / K210</th>
+        <th>ESP32</th>
+    </tr>
+    <tr>
+    <td>CPU:</td>
+        <td>
+            <p>Dual-core 64bit risc-v / 400MHz</p>
+            <p> (double-precision FPU integration)</p>
+        </td>
+        <td>Dual-core 32bit Xtensa LX6 / 240MHz</td>
+    </tr>
+    <tr>
+        <td>Memory:</td>
+        <td> 8Mib 64bit on-chip SRAM </td>
+        <td> 520Kib 32bit on-chip SRAM</td>
+    </tr>
+    <tr>
+        <td>NPU / KPU:</td>
+        <td> 1TOPS of INT8 multiplication</td>
+        <td> No NPU</td>
+    </tr>
+    <tr>
+        <td>Storage:</td>
+        <td>16MiB Flash, support micro SDXC expansion storage (max 128GB)</td>
+        <td>16MiB Flash</td>
+    </tr>
+    <tr>
+        <td> WIFI: </td>
+        <td> MaixDock (M1W) uses M1W (integrated ESP8285 2.4GHz WIFI SOC)</td>
+        <td> ESP32 comes with integrated 2.4GHz WIFI</td>
+    </tr>
+    <tr>
+        <td> Screen (package): </td>
+        <td> 2.4 inch TFT, screen resolution: 320*240</td>
+        <td> Depends on kit</td>
+    </tr>
+    <tr>
+        <td> Camera (package):</td>
+        <td> 30W pixel GC0328 camera </td>
+        <td> Depends on kit</td>
+    </tr>
+    <tr>
+        <td> TF card slot:</td>
+        <td> Multimedia resource expansion, support large-capacity storage</td>
+        <td> Depends on kit</td>
+    </tr>
+</table>
+
+<h1 id="m1w-unboxing">M1W Unboxing</h1>
+<p>I ordered the M1W from Aliexpress and it arrived in a small cardboard box with a plastic enclosure containing: the M1W itself, the 2.4 inch screen, a small camera already attached, an antenna and a USB-C  to Micro-b adapter.<br />
+<img src="/assets/M1W-unbloxed.png" alt="Platic enclosure" style="width:100%;" /></p>
+<h1 id="m1w-initial-power-on">M1W Initial Power On</h1>
+<p>An inital power on of the M1W originally showed a welcome MaixDuino welcome message on the display, but when trying to recreate it for a picture the display only shows white</p>
+
+<p><img src="/assets/M1W-White.png" alt="Platic enclosure" style="width:100%;" /></p>
+<h1 id="programming-on-the-m1w">Programming on the M1W</h1>
+<p>When trying to find guides for the M1W especially for programming low-level C code, most links from official sources are either on chinese or points to non existent pages. 
+However, Platformio has the M1W-board listed as <em>sipeed-maix-one-dock</em>, and is compatible with the arduino framework.<br />
+So for an easy test I wrote a simple script making the builtin led blink.  SUCCESS!!!<br />
+The <em>platformio.ini</em> and <em>main.cpp</em> code can be seen below</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#platformio.ini</span>
+
+    <span class="p">[</span><span class="n">env</span><span class="ss">:sipeed</span><span class="o">-</span><span class="n">maixduino</span><span class="p">]</span>
+    <span class="n">platform</span> <span class="o">=</span> <span class="n">kendryte210</span>
+    <span class="n">board</span> <span class="o">=</span> <span class="n">sipeed</span><span class="o">-</span><span class="n">maix</span><span class="o">-</span><span class="n">one</span><span class="o">-</span><span class="n">dock</span>
+    <span class="n">framework</span> <span class="o">=</span> <span class="n">arduino</span>
+    <span class="n">upload_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+    <span class="n">monitor_speed</span> <span class="o">=</span> <span class="mi">115200</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#main.cpp
+</span>
+    <span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
+</span>
+    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Starting LED blink"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Blink!"</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<h1 id="serial-communication-with-m1w">Serial communication with M1W</h1>
+<p>Serial communication is crucial when trying to debug anything on Micro-controllers, so to make sure Serial communication is working properly I added the <em>Serial.println(“Blink!”);</em> to the previous code. This however did not work out of the box, when trying to monitor the serial connection via <em>platformio device monitor</em> nothing would show up, and the LED would stop blinking?.<br />
+After doing some research I found that the M1W possibly was entering boot/ISP mode, as if i was trying to flash new software to it.
+This was easily fixed by disabling DTR and RTS by adding <em>monitor_rts = 0</em> and <em>monitor_dtr = 0</em> to <em>platformio.ini</em></p>
+<h1 id="k210-vs-esp32-cpu-performance">K210 vs ESP32 CPU Performance</h1>
+<p>The K210s CPU is clocked alot higher than that of the ESP32, so I was curios about what the performance difference could be?<br />
+Especially with the K210 supporting <em>FP64</em> and having a much larger amount of builtin SRAM. 
+For a quick benchmarking of the boards I did a simple and mostly theoretical benchmark, measuring the time it took to do 10
+million addtions, multiplications and divisions, for <em>INT64</em> <em>Float32</em> and <em>Float64</em>, on a single core, then converting the results to million operations per second. Results can be seen below, where the K210 is on average 2.5x faster compared to the ESP32.<br />
+<img src="/assets/K210vESP32-mops.svg" alt="Benchmark" style="width:100%;" />
+With the K210 having FP64 implemented in hardware, and the ESP32 relying on software, it is disappointing to see that the FP64 performance isn’t much greater than that of the ESP32. This benchmark only focuses on raw performance that isn’t touching the IO.</p>
+<h1 id="k210-vs-esp32-memory-performance">K210 vs ESP32 Memory Performance</h1>
+<p>With the CPU performance of the K210 being impressive but still disappointing, I wanted to know how big a difference the larger SRAM capacity could have on performance.
+The speed of both read and write was tested by allocating a certain buffer size and written and reading from it.</p>
+
+<p><img src="/assets/K210vsESP32ReadWrite.svg" alt="Benchmarkmemory" style="width:100%;" /><br />
+As can been seen on the image above, the K210 outperforms the ESP32 by a wide margin, with write speeds being consistent up to over 5MB, were the ESP32 falls of after 110KB, because everything over that requires the ESP32 to use external RAM.</p>
+<h1 id="memory-impact-on-performance">Memory Impact on Performance</h1>
+<p>The K210 has a much more fast memory to use, whick makes sense with the point of being able to do live image processing, requiring multiple frames to be kept in memory while processing. To measure the difference when running simple image manipulation tasks, square images between 128-1250 was allocated, filled with a gradiant and downscaled to quarter size. Excution times can be improved by using dedicated libraries and not relying on standard Arduino SDK.</p>
+
+<p><img src="/assets/K210vESP32img.svg" alt="Benchmarkimg" style="width:100%;" /></p>
+<h1 id="development-with-kendryte-standalone-sdk">Development with Kendryte-standalone-sdk</h1>
+<p>To <em>Arduino framework</em> doesn’t have access to all the feature of the M1W, to get this the Kendryte-standalone-sdk is needed.
+The sdk is used by default when initing a platformio project for the M1W, and the sdk can be found on github <a href="https://github.com/kendryte/kendryte-standalone-sdk/tree/develop">SDK Github Page</a> with some documentation here <a href="https://loboris.eu/sipeed/kendryte_standalone_programming_guide_v0.3.0.zh-CN.en.pdf">Documentation</a>.
+Most funcitons seems documented, and a simple hello world example is included in the <em>src/</em> folder.
+Running the program writes <em>“hello world”</em> from both cores, with output looking like this.</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Core</span> <span class="mi">0</span> <span class="n">Hello</span> <span class="n">world</span>
+<span class="n">Core</span> <span class="mi">1</span> <span class="n">Hello</span> <span class="n">world</span>
+</code></pre></div></div>
+<p>Now that the <em>Arduino framework</em> is no longer used, the program is written in standard c, and printin via serial is a simple as:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bsp.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;sysctl.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>

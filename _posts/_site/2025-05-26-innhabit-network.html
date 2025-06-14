@@ -1,0 +1,135 @@
+<h1 id="what-is-innhabit">What is INNHABIT</h1>
+<p>INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server.
+<img src="/assets/SystemDiagramAlternate.png" alt="SystemOverview" style="width:100%;" /></p>
+<blockquote>
+  <h4 id="goal-of-networking-for-innhabit"><strong>Goal of Networking for INNHABIT</strong></h4>
+  <ul>
+    <li>Send Entry/Exit events from Jetson to Aggregation Server</li>
+    <li>Store Entry/Exit events for further analysis</li>
+    <li>Update setting on Jetson remotely from Aggregation Server</li>
+    <li>Serve a Web Dashboard for detailed statics</li>
+    <li>Serve focused statics to existing digital signage</li>
+  </ul>
+</blockquote>
+
+<h1 id="jetson-internal-architecture">Jetson Internal architecture</h1>
+<p>The software of the Jetson implement multiple threads each having a class and task assigned.<br />
+A simplifyed thread description and diagram can be seen below:<br />
+<img src="/assets/ThreadDiagram.png" alt="SystemOverview" style="width:100%;" />
+The figure shows all main threads and the shared resourses between them.
+The main program flow is a follows</p>
+<blockquote>
+  <ul>
+    <li><strong>FrameCapturer Thread</strong> Captures frames from camera and adds them to <em>frameQueue</em></li>
+    <li><strong>Detection Thread</strong> Takes frames from <strong>frameQueue</strong>, runs ML and tracking, calls <strong>Api Handler Thread</strong> if Entry/Exit is detected. Adds image with detection and tracking to <strong>displayQueue</strong>, runs ML and tracking, calls <strong>Api Hander Thread</strong> if Entry/Exit is detected. Adds image with detection and tracking to <strong>displayQueue</strong>.</li>
+    <li><strong>Display Thread</strong> Takes frames from <strong>displayQueue</strong> and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream.</li>
+    <li><strong>DevicePoller Thread</strong> uses <strong>Api Handler Thread</strong> to poll <strong>Aggregation server</strong> for updated settings</li>
+    <li><strong>Api Handler Thread</strong> handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.</li>
+  </ul>
+
+</blockquote>
+
+<h3 id="sending-entryexit-events">Sending Entry/Exit events</h3>
+<p>An Entry/Exit event is sent everytime it is detected that a person has entered or exited.
+The sending of these event is handled by a dedicated thread <em>ApiHandler</em>.<br />
+The flow of such and event can be seen below:
+<img src="/assets/network_person_event_diagram.png" alt="SystemOverview" style="width:100%;" />
+The Jetsons installed are only be connected to via Wi-Fi. This makes deployment more flexible and reduces installation costs.<br />
+The Jetsons are connected to a <em>Word-Wide-Web</em> connected network, seperate from <em>eduroam</em>. Bypassing alot of issues caused by the security system around <em>eduroam</em>. The Jetsons uploads Entry/Exit events via HTTP<em>s</em> to the Aggregation server hosted with the <em>DNS</em> adress <em>INNHABIT.dk</em>.
+The Jetsons uses <em>libcurl</em> for sending HTTP<em>s</em> PUT request to <em>INNHABIT</em> at designted <em>API</em> endpoints.</p>
+<h2 id="api-endpoints-for-jetson"><strong>API endpoints for Jetson</strong></h2>
+<p><img src="/assets/EndpointDiagram.png" alt="API" style="width:100%;" /></p>
+
+<p>For handling the all <em>API</em> events the Jetsons software has a dedicated thread and class <em>ApiHandler</em>.
+<em>ApiHandler</em> works of a queue of <em>API</em> events ensuring no events are missed or stalls the system.
+<em>libcurl</em> is designed to simplify the integration of HTTP<em>s</em>, and the code for contruction and sending a HTTP<em>s</em> request with JSON body is seen below.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ApiHandler:sendPostRequest
+</span>
+<span class="n">json</span> <span class="n">ApiHandler</span><span class="o">::</span><span class="n">sendPostRequest</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">endpoint</span><span class="p">,</span> <span class="k">const</span> <span class="n">json</span><span class="o">&amp;</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="nc">curl_slist</span><span class="o">*</span> <span class="n">headers</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="n">curl_slist_append</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="s">"Content-Type: application/json"</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">auth_header</span> <span class="o">=</span> <span class="s">"Authorization: Bearer "</span> <span class="o">+</span> <span class="n">api_key_</span><span class="p">;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="n">curl_slist_append</span><span class="p">(</span><span class="n">headers</span><span class="p">,</span> <span class="n">auth_header</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">full_url</span> <span class="o">=</span> <span class="n">base_url_</span> <span class="o">+</span> <span class="n">endpoint</span><span class="p">;</span>
+    <span class="n">curl_easy_setopt</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLOPT_URL</span><span class="p">,</span> <span class="n">full_url</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">data_str</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">dump</span><span class="p">();</span>
+    <span class="n">curl_easy_setopt</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="n">data_str</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+
+    <span class="n">curl_easy_setopt</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="n">headers</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">response</span><span class="p">;</span>
+    <span class="n">curl_easy_setopt</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLOPT_WRITEFUNCTION</span><span class="p">,</span> <span class="n">writeCallback</span><span class="p">);</span>
+    <span class="n">curl_easy_setopt</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLOPT_WRITEDATA</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">response</span><span class="p">);</span>
+
+    <span class="kt">long</span> <span class="n">http_code</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">CURLcode</span> <span class="n">res</span> <span class="o">=</span> <span class="n">curl_easy_perform</span><span class="p">(</span><span class="n">curl_</span><span class="p">);</span>
+    <span class="n">curl_easy_getinfo</span><span class="p">(</span><span class="n">curl_</span><span class="p">,</span> <span class="n">CURLINFO_RESPONSE_CODE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">http_code</span><span class="p">);</span>
+
+    <span class="n">json</span> <span class="n">result</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="n">CURLE_OK</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">http_code</span> <span class="o">&gt;=</span> <span class="mi">200</span> <span class="o">&amp;&amp;</span> <span class="n">http_code</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="o">::</span><span class="n">parse</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">is_discarded</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">ERROR</span><span class="p">(</span><span class="s">"Failed to parse response as JSON"</span><span class="p">);</span>
+                    <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">();</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">last_api_success_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">json</span><span class="o">::</span><span class="n">parse_error</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">ERROR</span><span class="p">(</span><span class="s">"Parse error: "</span> <span class="o">&lt;&lt;</span> <span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">());</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">();</span>
+                <span class="n">last_api_success_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">ERROR</span><span class="p">(</span><span class="s">"HTTP error: "</span> <span class="o">&lt;&lt;</span> <span class="n">http_code</span> <span class="o">&lt;&lt;</span> <span class="s">" - Response: "</span> <span class="o">&lt;&lt;</span> <span class="n">response</span><span class="p">);</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">();</span>
+            <span class="n">last_api_success_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">ERROR</span><span class="p">(</span><span class="s">"CURL error: "</span> <span class="o">&lt;&lt;</span> <span class="n">curl_easy_strerror</span><span class="p">(</span><span class="n">res</span><span class="p">));</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">();</span>
+        <span class="n">last_api_success_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">curl_slist_free_all</span><span class="p">(</span><span class="n">headers</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The HTTP request contructed from this example looks something like:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">POST</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">events</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="o">:</span> <span class="n">innhabit</span><span class="p">.</span><span class="n">dk</span>
+<span class="n">Authorization</span><span class="o">:</span> <span class="n">Bearer</span> <span class="o">&lt;</span><span class="n">GoodEncryptedKeyForSpecificEntrance</span><span class="o">&gt;</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="o">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+
+<span class="p">{</span>
+  <span class="s">"timestamp"</span><span class="o">:</span> <span class="s">"2025-05-29T12:34:56Z"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>With a HTTP POST request sent to the server, what then happens when it’s recieved?</p>
+<h1 id="aggregation-server">Aggregation Server</h1>
+<p>The internal architecture is run inside a <a href="https://www.docker.com/"><strong>Docker</strong></a> network with multiple containers handling different parts of the system.<br />
+The <em>Docker</em> network can be seen below: <em>All arrows a bi-directional</em>
+<img src="/assets/DockerDiagram.png" alt="SystemOverview" style="width:100%;" />
+As can be seen on the image above, the <em>Docker</em> network consists of 4 containers described below:</p>
+<h3 id="nginx">NGINX</h3>
+<p><a href="https://nginx.org/"><strong>NGINX</strong></a> can be seen as the front end of the system, being the only container able of direct communication with clients.
+INGINX servers client with all static resourses such as HTML and Images, thenpasses request to Gunicorn if any logic needs to be handles, such as permissions or dynamically updating charts.</p>
+<h3 id="gunicorn--django">Gunicorn / Django</h3>
+<p>Gunicorn is where the brain of the Webserver is hosted, Gunicorn hosts a Django Webserver and then handles communication between IGINX and Django.
+Django then handles database communication and all dynamic content on the Webserver.
+Some of the dynamic sites is mainly the admindashboard and insights page seen below:<br />
+<img src="/assets/admindashboard.png" alt="Dashboard" style="width:100%;" />
+<img src="/assets/insights.png" alt="Insight" style="width:49%;" />
+<img src="/assets/PublicInsight.png" alt="Insight" style="width:49%;" /></p>
+<h3 id="postgresql">PostgreSQL</h3>
+<p>PostgreSQL is the database used for storing all the Entry/Exit events, it is hosted in its own docker container for easy integration, and communicates with Gunicorn. The database is contructed with Multiple tables which can be seen on the Figure Below:<br />
+<img src="/assets/innhabit-db.png" alt="DataBase" style="width:100%;" /></p>
+
+<h3 id="valkey">Valkey</h3>
+<p>Valkey is a key/value datastore used to store password API keys, valued for its security and easy integration with Django and Gunicorn.
+The API keys generated, as shown in the figure below, consist of an easy-to-read identifier, a prefix to distinguish the key, and a secret 64-character long key that is randomly generated. This randomness is why salting is not necessary.
+<img src="/assets/APISections.png" alt="APIKey" style="width:100%;" /></p>

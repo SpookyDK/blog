@@ -1,66 +1,1049 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-03T09:42:38+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SpookyDKs projects</title><subtitle>Blog for all my projects that need it</subtitle><author><name>Esben Jørgensen</name></author><entry><title type="html">SSP eksamens spørgsmål</title><link href="http://localhost:4000/blog/2025/06/01/ssp.html" rel="alternate" type="text/html" title="SSP eksamens spørgsmål" /><published>2025-06-01T00:00:00+02:00</published><updated>2025-06-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/06/01/ssp</id><content type="html" xml:base="http://localhost:4000/blog/2025/06/01/ssp.html"><![CDATA[<h1 id="del-1-produktudvikling">Del 1: Produktudvikling</h1>
-<h2 id="sp1">SP1</h2>
-<h3 id="hvad-er-det-primære-formål-med-opportunity-identification-processen-og-hvad-er-de-vigtigste-output-beskriveksemplificer-hvordan-man-kan-udføre-processen">Hvad er det primære formål med opportunity identification processen og hvad er de vigtigste output? Beskriv/eksemplificer hvordan man kan udføre processen.</h3>
-<p>kan jeg ikke huske hvad er</p>
-<h3 id="er-det-radikalt-nye-produkter-altid-det-bedste-mål-hvad-er-fordelen-og-ulempen-ved-radikalt-nye-produkter">Er det radikalt nye produkter altid det bedste mål? Hvad er fordelen og ulempen ved radikalt nye produkter?</h3>
-<p>Ikke udnyttet marked, dyrer løsning / mere udvikling</p>
-<h2 id="sp2">SP2</h2>
-<h3 id="hvad-kan-vanskeliggøre-indhentningen-af-customer-needs-hvorfor-er-indhentningen-af-disse-et-særligt-vigtigt-step-i-produktudviklingsprocessen">Hvad kan vanskeliggøre indhentningen af customer needs? Hvorfor er indhentningen af disse et særligt vigtigt step i produktudviklingsprocessen?</h3>
-<p>Det er vigtigt at vide hvad kunderne har brug for, da i sidste ende er det kunderne der bestemmer om produktet skal have success.
-Men det kan være svært da kunder ikke altid ved hvad de vil have, og hvem er dine kunder egentligt</p>
-<h3 id="hvilke-andre-interessenter-kunne-være-relevante-at-indhente-krav-til-produktet-fra-hvordan-vil-du-gøre-det">Hvilke andre interessenter kunne være relevante at indhente krav til produktet fra? Hvordan vil du gøre det?</h3>
-<p>Konkurrenter(Hvad kan konkurrenterne), desk study<br />
-Mere….</p>
-<h2 id="sp3">SP3</h2>
-<h3 id="hvilke-typer-af-modularitet-findes-der-for-en-modulær-produktarkitektur-giv-et-par-eksempler-fra-konkrete-produkter">Hvilke typer af modularitet findes der for en modulær produktarkitektur? Giv et par eksempler fra konkrete produkter.</h3>
-<p>Ved jeg ikke</p>
-<h3 id="er-en-modulær-produktarkitektur-altid-en-fordel-er-det-tilfælde-hvor-en-integreret-arkitektur-er-en-fordel-giv-gerne-eksempler">Er en modulær produktarkitektur altid en fordel? Er det tilfælde hvor en integreret arkitektur er en fordel? Giv gerne eksempler.</h3>
-<p>Ved jeg ikke</p>
-<h2 id="sp4">SP4</h2>
-<h3 id="i-kurset-har-vi-anvendt-en-screening--scoring-matrix-til-at-udvælge-et-endeligt-koncept-hvad-er-styrken-ved-denne-metode-hvad-kunne-alternative-metoder-være-til-at-vælge-et-koncept">I kurset har vi anvendt en ”screening &amp; scoring” matrix til at udvælge et endeligt koncept. Hvad er styrken ved denne metode? Hvad kunne alternative metoder være til at vælge et koncept?</h3>
-<p>Kan jeg ikke huske</p>
-<h3 id="hvad-kunne-du-gøre-for-at-øge-troværdigheden-af-de-enkelte-scorer-i-matrixen">Hvad kunne du gøre for at øge troværdigheden af de enkelte scorer i matrixen?</h3>
-<p>Understøtte dem med kilder og argumentationer, eller basere dem på customer needs undersøgelser.</p>
-<h2 id="sp5">SP5</h2>
-<h3 id="hvad-er-fordelene-ved-at-følge-en-struktureret-metode-til-produktudvikling-hvad-risikerer-man-ved-ikke-at-gøre-det">Hvad er fordelene ved at følge en struktureret metode til produktudvikling? Hvad risikerer man ved ikke at gøre det?</h3>
-<p>Man risikerer at man ender ud med et produkt der ikke lever op til kravene, eller ikke har nogle kunder.<br />
-mere…</p>
-<h3 id="hvad-er-nogle-af-de-største-faldgrupper-som-produktudviklingsteam-i-forbindelse-med-processen">Hvad er nogle af de største faldgrupper som produktudviklingsteam i forbindelse med processen?</h3>
-<p>Techdemoer istedet for produkter <br />
-mere…</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-14T14:57:43+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SpookyDKs projects</title><subtitle>Blog for all my projects that need it</subtitle><author><name>Esben Jørgensen</name></author><entry><title type="html">Linear Algebra Example</title><link href="http://localhost:4000/2025/06/06/linear-algebra-example.html" rel="alternate" type="text/html" title="Linear Algebra Example" /><published>2025-06-06T00:00:00+02:00</published><updated>2025-06-06T00:00:00+02:00</updated><id>http://localhost:4000/2025/06/06/linear-algebra-example</id><content type="html" xml:base="http://localhost:4000/2025/06/06/linear-algebra-example.html"><![CDATA[<hr />
+<p>layout: post
+title: “Linear Algebra Example”
+date: 2025-06-10
+categories: [blog]
+—</p>
 
-<h1 id="del-2-kravsspecifikation-og-system-design">Del 2: Kravsspecifikation og system design.</h1>
-<h2 id="sp6">SP6</h2>
-<h3 id="hvad-er-et-use-case-diagram-hvilke-elementer-består-det-af-hvad-bruger-man-det-til-hvornår-anvender-man-use-case-diagrammer-tegn-eller-vis-eksempeleksempler">Hvad er et use case diagram? Hvilke elementer består det af? Hvad bruger man det til? Hvornår anvender man use case diagrammer? Tegn eller vis eksempel/eksempler.</h3>
-<p>Et use case diagram beskriver users interaktion med produktet, omhandler ikke intern functionalitet, men kinda en front-end for bruget at produktet.</p>
-<h3 id="hvad-er-en-use-case-beskrivelse-hvad-er-vigtigt-i-en-sådan-beskrivelse-hvordan-relaterer-disse-sig-til-krav-specifikationerne-hvornår-udarbejder-man-beskrivelserne-hvem-udarbejder-dem-giv-eksempler">Hvad er en use case beskrivelse? Hvad er vigtigt i en sådan beskrivelse? Hvordan relaterer disse sig til krav specifikationerne? Hvornår udarbejder man beskrivelserne? Hvem udarbejder dem? Giv eksempler.</h3>
-<p>mere….</p>
-<h2 id="sp7">SP7</h2>
-<h3 id="hvad-karakteriserer-gode-krav-giv-eksempler-på-gode-og-dårlige-krav-hvor-i-v-modellen-finder-vi-hvilke-typer-af-krav-med-hvem-udarbejder-vi-krav-og-på-hvilke-måde-sikrer-vi-at-vi-får-samtlige-vigtige-krav-med-i-kravspecifikationen">Hvad karakteriserer gode krav? Giv eksempler på gode og dårlige krav. Hvor i V-modellen finder vi hvilke typer af krav? Med hvem udarbejder vi krav og på hvilke måde sikrer vi at vi får samtlige vigtige krav med i kravspecifikationen?</h3>
-<p>Med kunden, understøttet af kilder, helst målbar,
-mere….</p>
-<h3 id="hvilke-krav-har-vi-til-vores-kravspecifikation-hvordan-sikrer-vi-at-krav-til-krav-er-opfyldt-hvordan-bruger-vi-krav-i-efterfølgende-udviklingsproces-hvordan-forholder-vi-os-til-at-skulle-lave-ændringer-i-krav-i-de-efterfølgende-tidsperioder-i-en-udviklingsproces-feks-hen-mod-slutningen-af-projektet-giv-eksempler">Hvilke krav har vi til vores kravspecifikation? Hvordan sikrer vi at krav til krav er opfyldt? Hvordan bruger vi krav i efterfølgende udviklingsproces? Hvordan forholder vi os til at skulle lave ændringer i krav i de efterfølgende tidsperioder i en udviklingsproces f.eks. hen mod slutningen af projektet? Giv eksempler.</h3>
-<p>Målbarhed
-mere….</p>
-<h2 id="sp8">SP8</h2>
-<h3 id="hvordan-deler-man-effektivt-krav-op-i-funktionelle-moduler-hvad-definerer-et-modul-hvad-kan-vi-bruge-modulariseringen-til-giv-eksempler-gerne-på-tavle">Hvordan deler man effektivt krav op i funktionelle moduler? Hvad definerer et modul? Hvad kan vi bruge modulariseringen til? Giv eksempler, gerne på tavle.</h3>
-<p>mere….</p>
-<h3 id="hvad-er-en-grænseflade-hvordan-bliver-man-enig-om-en-grænseflade-hvem-er-involveret-i-at-definere-grænseflader-hvilke-fordeleulemper-er-der-ved-at-definere-grænseflader-tidligtsent-i-et-projektforløb-giv-eksempler">Hvad er en grænseflade? Hvordan bliver man enig om en grænseflade? Hvem er involveret i at definere grænseflader? Hvilke fordele/ulemper er der ved at definere grænseflader tidligt/sent i et projektforløb? Giv eksempler</h3>
-<p>Kunder og designer, baseret på use-case diagram
-mere…..</p>
+<h1 id="-lineær-algebra--eksamen-2025">📘 Lineær Algebra – Eksamen 2025</h1>
 
-<h1 id="del-3-implementering-og-test">Del 3: Implementering og test</h1>
-<h2 id="sp9">SP9</h2>
-<h3 id="hvad-er-kodestil-og-kodestruktur-for-hvem-er-dette-vigtigt-hvad-har-i-gjort-i-jeres-projekt-hvordan-bliver-man-enige-om-feks-brug-af-white-space-eller-tabs-giv-eksempler-på-forskellige-kodestilarter-der-kan-øge-læsevenligheden-og-eksempler-på-det-modsatte-der-mindsker-læsevenligheden">Hvad er kodestil og kodestruktur? For hvem er dette vigtigt? Hvad har I gjort i jeres projekt? Hvordan bliver man enige om f.eks. brug af white space eller tab’s? Giv eksempler på forskellige kodestilarter der kan øge læsevenligheden, og eksempler på det modsatte (der mindsker læsevenligheden).</h3>
-<p>kamelCase, navngivning, function størrelse, nasa’s krav.</p>
-<h3 id="hvad-er-objekt-orienteret-programmering-hvad-er-en-klasse-i-forhold-til-et-objekt-hvad-er-et-klassediagram-tegn-gerne-et-simpelt-et-på-tavlen-og-diskuter-ud-fra-det-tegnede-diagram">Hvad er objekt orienteret programmering? Hvad er en klasse i forhold til et objekt? Hvad er et klassediagram? Tegn gerne et simpelt et på tavlen og diskuter ud fra det tegnede diagram.</h3>
-<p>Metoder i klasser</p>
-<h2 id="sp10">SP10</h2>
-<h3 id="hvad-er-white-boks-test-hvornår-anvender-vi-white-boks-test-og-i-hvilke-sammenhæng-hvad-er-en-path-test-og-hvorfor-er-en-100-path-testing-stort-set-altid-umulig-at-gennemføre-tegn-et-flowgraph-diagram-på-tavlen-og-forklar-hvad-en-branch-test-er">Hvad er white boks test? Hvornår anvender vi white boks test og i hvilke sammenhæng. Hvad er en path test og hvorfor er en 100% path testing stort set altid umulig at gennemføre? Tegn et flowgraph diagram på tavlen og forklar hvad en branch test er</h3>
-<h3 id="hvad-er-debugning-hvordan-bruger-man-en-debugger-princippet-hvornår-bruger-man-en-debugger-forklar-ud-fra-et-af-de-tre-kodestumper-givet-på-moodle-hvordan-du-vil-white-boks-teste-koden-vis-gerne-på-laptop-hvis-du-har-den-med">Hvad er debugning? Hvordan bruger man en debugger (princippet)? Hvornår bruger man en debugger? Forklar ud fra et af de tre kodestumper givet på moodle, hvordan du vil white boks teste koden. Vis gerne på laptop hvis du har den med.</h3>
-<h2 id="sp11">SP11</h2>
-<h3 id="hvad-er-en-black-box-test-forklar-princippet-bag-black-box-tests-er-det-realistisk-at-risikere-at-en-komplet-test-skal-gennemføre-10100-kombinationsmuligheder-af-input-værdier--hvorforhvorfor-ikke-antag-det-er-hvordan-sikrer-du-så-at-testen-kan-gennemføres-på-realistisk-kort-tid-argumenter-for-hvorfor-din-metode-vil-være-bullet-proof-ved-sidste-spørgsmål-tag-gerne-udgangspunkt-i-en-løsning-fra-opgave-1">Hvad er en black box test? Forklar princippet bag black box tests. Er det realistisk at risikere at en komplet test skal gennemføre 10^100 kombinationsmuligheder af input værdier – hvorfor/hvorfor ikke? Antag det er, hvordan sikrer du så at testen kan gennemføres på realistisk kort tid? Argumenter for hvorfor din metode vil være bullet-proof. Ved sidste spørgsmål, tag gerne udgangspunkt i en løsning fra opgave 1.</h3>
-<h3 id="hvis-noget-kode-ser-ud-til-at-virke-er-du-så-helt-sikker-hvordan-sikrer-du-dig-at-du-også-vil-have-den-kode-til-at-være-ansvarlig-for-næste-flytur-du-selv-skal-på-beskriv-hvordan-du-fandt-fejlen-i-det-kode-der-blev-givet-i-opgave-2-er-du-sikker-på-du-fandt-alle-fejl-argumenter-hvorfor-du-er-sikke">Hvis noget kode ser ud til at virke, er du så helt sikker? Hvordan sikrer du dig, at du også vil have den kode til at være ansvarlig for næste flytur du selv skal på? Beskriv hvordan du fandt fejlen i det kode der blev givet i opgave 2. Er du sikker på du fandt ALLE fejl? Argumenter hvorfor du er sikke</h3>]]></content><author><name>Esben Jørgensen</name></author><category term="blog" /><summary type="html"><![CDATA[Del 1: Produktudvikling SP1 Hvad er det primære formål med opportunity identification processen og hvad er de vigtigste output? Beskriv/eksemplificer hvordan man kan udføre processen. kan jeg ikke huske hvad er Er det radikalt nye produkter altid det bedste mål? Hvad er fordelen og ulempen ved radikalt nye produkter? Ikke udnyttet marked, dyrer løsning / mere udvikling SP2 Hvad kan vanskeliggøre indhentningen af customer needs? Hvorfor er indhentningen af disse et særligt vigtigt step i produktudviklingsprocessen? Det er vigtigt at vide hvad kunderne har brug for, da i sidste ende er det kunderne der bestemmer om produktet skal have success. Men det kan være svært da kunder ikke altid ved hvad de vil have, og hvem er dine kunder egentligt Hvilke andre interessenter kunne være relevante at indhente krav til produktet fra? Hvordan vil du gøre det? Konkurrenter(Hvad kan konkurrenterne), desk study Mere…. SP3 Hvilke typer af modularitet findes der for en modulær produktarkitektur? Giv et par eksempler fra konkrete produkter. Ved jeg ikke Er en modulær produktarkitektur altid en fordel? Er det tilfælde hvor en integreret arkitektur er en fordel? Giv gerne eksempler. Ved jeg ikke SP4 I kurset har vi anvendt en ”screening &amp; scoring” matrix til at udvælge et endeligt koncept. Hvad er styrken ved denne metode? Hvad kunne alternative metoder være til at vælge et koncept? Kan jeg ikke huske Hvad kunne du gøre for at øge troværdigheden af de enkelte scorer i matrixen? Understøtte dem med kilder og argumentationer, eller basere dem på customer needs undersøgelser. SP5 Hvad er fordelene ved at følge en struktureret metode til produktudvikling? Hvad risikerer man ved ikke at gøre det? Man risikerer at man ender ud med et produkt der ikke lever op til kravene, eller ikke har nogle kunder. mere… Hvad er nogle af de største faldgrupper som produktudviklingsteam i forbindelse med processen? Techdemoer istedet for produkter mere…]]></summary></entry><entry><title type="html">INNHABIT Network Overview</title><link href="http://localhost:4000/blog/2025/05/26/innhabit-network.html" rel="alternate" type="text/html" title="INNHABIT Network Overview" /><published>2025-05-26T00:00:00+02:00</published><updated>2025-05-26T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/05/26/innhabit-network</id><content type="html" xml:base="http://localhost:4000/blog/2025/05/26/innhabit-network.html"><![CDATA[<h1 id="what-is-innhabit">What is INNHABIT</h1>
+<h2 id="1-hvordan-multiplicerer-man-to-matricer-hvilke-størrelser-skal-de-to-matricer-a-og-b-have-så-at-deres-produkt-ab-er-defineret-lille-eksempel-på-det-fx-32-matrix-gange-to-dimensionelt-vektor">1. Hvordan multiplicerer man to matricer? Hvilke størrelser skal de to matricer A og B have, så at deres produkt AB er defineret? Lille eksempel på det, fx 3×2-matrix gange to-dimensionelt vektor.</h2>
+
+<p>To matricer</p>
+
+\[A \in \mathbb{R}^{m \times n} \quad \text{og} \quad B \in \mathbb{R}^{n \times p}\]
+
+<p>kan multipliceres, hvis <strong>antallet af søjler i $A$</strong> er lig med <strong>antallet af rækker i $B$</strong>. Produktet</p>
+
+\[AB \in \mathbb{R}^{m \times p}\]
+
+<p>bliver da en matrix i $\mathbb{R}^{m \times p}$.</p>
+
+<p><strong>Eksempel:</strong></p>
+
+\[A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{bmatrix}, \quad
+x = \begin{bmatrix} 7 \\ 8 \end{bmatrix}
+\Rightarrow
+Ax = \begin{bmatrix} 1\cdot7 + 2\cdot8 \\ 3\cdot7 + 4\cdot8 \\ 5\cdot7 + 6\cdot8 \end{bmatrix} = \begin{bmatrix} 23 \\ 53 \\ 83 \end{bmatrix}\]
+
+<hr />
+
+<h2 id="2-gælder-altid-ab--ba-hvis-a-og-b-begge-er-nn-matricer-nej-oftest-ikke">2. Gælder altid AB = BA, hvis A og B begge er n×n-matricer? (Nej, oftest ikke!)</h2>
+
+<p>Nej, matrixmultiplikation er <strong>ikke kommutativ</strong>. Dvs. generelt gælder:</p>
+
+\[AB \neq BA\]
+
+<p><strong>Undtagelser:</strong> Det kan dog gælde, hvis:</p>
+<ul>
+  <li>( A = I ) (identitetsmatrix)</li>
+  <li>( A ) og ( B ) er diagonale og kommuterer</li>
+  <li>( A ) og ( B ) er potenser af samme matrix</li>
+</ul>
+
+<hr />
+
+<h2 id="3-hvad-sker-når-man-ganger-matricen-a-fra-venstre-eller-højre-med-identitetsmatricen-i-af-den-tilpasse-størrelse-ingenting-man-får-bare-igen-a">3. Hvad sker, når man ganger matricen A fra venstre eller højre med identitetsmatricen I af den tilpasse størrelse? (Ingenting, man får bare igen A.)</h2>
+
+<p>Hvis 
+\(A = \mathbb{R}^{m \times n} \quad \text{og} \quad I\)
+har passende størrelse, så gælder:
+\(IA = A \quad \text{og} \quad AI = A\)</p>
+
+<hr />
+
+<h2 id="4-hvor-mange-løsninger-kan-et-lineært-ligningssystem-ax--b-i-princippet-have">4. Hvor mange løsninger kan et lineært ligningssystem Ax = b i princippet have?</h2>
+
+<p>Et lineært system kan have:</p>
+<ul>
+  <li><strong>Ingen løsning</strong> (inkonsistent)</li>
+  <li><strong>Én entydig løsning</strong></li>
+  <li><strong>Uendeligt mange løsninger</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="5-hvordan-kan-man-undersøge-om-ax--b-har-løsninger-og-i-givet-fald-finde-dem">5. Hvordan kan man undersøge, om Ax = b har løsninger og i givet fald finde dem?</h2>
+
+<p>Brug <strong>Gauss-elimination</strong> til at omskrive systemet til trappeform.</p>
+
+<ul>
+  <li>Tjek om systemet er <strong>konsistent</strong></li>
+  <li>Brug <strong>tilbageindsættelse</strong> for at finde løsninger, hvis systemet har løsninger</li>
+</ul>
+
+<hr />
+
+<h2 id="6-hvad-er-totalmatricen-tilknyttet-ax--b">6. Hvad er totalmatricen tilknyttet Ax = b?</h2>
+
+<p>Den <strong>totalmatricen</strong> er matrixen dannet ved at sætte højresiden $b$ sammen med koefficientmatrixen $A$:</p>
+
+\[[A \mid b]\]
+
+<hr />
+
+<h2 id="7-hvilke-elementære-rækkeoperationer-kender-du">7. Hvilke elementære rækkeoperationer kender du?</h2>
+
+<ol>
+  <li>Ombytning af to rækker</li>
+  <li>Multiplikation af en række med en ikke-nul konstant</li>
+  <li>Lægge en multiplum af én række til en anden</li>
+</ol>
+
+<hr />
+
+<h2 id="8-hvad-er-en-trappeform-og-hvad-er-specielt-ved-en-reduceret-trappeform">8. Hvad er en trappeform og hvad er specielt ved en reduceret trappeform?</h2>
+
+<p><strong>Trappeform:</strong></p>
+<ul>
+  <li>Alle nullerækker nederst</li>
+  <li>Første ikke-nul element i en række (pivot) er længere til højre end i rækken ovenfor</li>
+  <li>Pivotelementet er ofte 1</li>
+</ul>
+
+<p><strong>Reduceret trappeform:</strong></p>
+<ul>
+  <li>Alle pivotelementer er 1</li>
+  <li>Alle andre elementer i pivot-søjlerne er 0</li>
+</ul>
+
+<hr />
+
+<h2 id="9-hvordan-kan-man-aflæse-fra-en-trappeform-af-totalmatricen-om-systemet-er-løseligt-eller-ej-og-hvor-mange-løsninger-man-har-hvis-systemet-er-løseligt-hvordan-kan-man-se-om-en-variable-er-fri-hvordan-kan-man-bestemme-løsninger-ud-fra-en-trappeform-hvis-systemet-er-konsistent">9. Hvordan kan man aflæse fra en trappeform af totalmatricen, om systemet er løseligt eller ej, og hvor mange løsninger man har hvis systemet er løseligt? Hvordan kan man se, om en variable er fri? Hvordan kan man bestemme løsninger ud fra en trappeform, hvis systemet er konsistent?</h2>
+
+<ul>
+  <li>Hvis der er en række som $0 = d$, hvor $d \neq 0$: <strong>ingen løsning</strong></li>
+  <li>Hvis antallet af pivot-søjler $&lt;$ antal variable: <strong>fri variable</strong></li>
+  <li>Brug <strong>tilbageindsættelse</strong> til at finde løsninger</li>
+</ul>
+
+<hr />
+
+<h2 id="10-kan-du-bringe-følgende-totalmatrix-på-trappeform">10. Kan du bringe følgende totalmatrix på trappeform?</h2>
+
+\[\left[\begin{array}{ccccc}
+-1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+1 &amp; 3 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; -1 &amp; 2 &amp; 1 &amp; 1
+\end{array}\right]\]
+
+<p><strong>Løsning (Gauss-elimination):</strong></p>
+
+<ol>
+  <li>Byt række 1 og 2</li>
+  <li>Brug række 1 til at eliminere elementet i række 2</li>
+  <li>Fortsæt til trappeform</li>
+</ol>
+
+<p>Resultatet (trappeform):</p>
+
+\[\left[\begin{array}{ccccc}
+1 &amp; 3 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 5 &amp; 4 &amp; 5 &amp; 5 \\
+0 &amp; 0 &amp; \dots &amp; \dots &amp; \dots
+\end{array}\right]\]
+
+<hr />
+
+<h2 id="11-hvad-betyder-det-at-en-matrix-er-på-reduceret-trappeform">11. Hvad betyder det, at en matrix er på reduceret trappeform?</h2>
+
+<p>En matrix er i <strong>reduceret trappeform</strong>, hvis:</p>
+
+<ul>
+  <li>Den er i trappeform</li>
+  <li>Alle <strong>pivotelementer</strong> (første ikke-nul elementer i hver række) er 1</li>
+  <li>Alle <strong>andre elementer i pivot-søjlen</strong> er 0</li>
+</ul>
+
+<p>Det gør det nemt at aflæse løsninger direkte.</p>
+
+<hr />
+
+<h2 id="12-hvordan-kan-man-løse-ax--b-vha-reduceret-trappeform">12. Hvordan kan man løse Ax = b vha. reduceret trappeform?</h2>
+
+<ol>
+  <li>Sæt den <strong>totalmatricen</strong> op: $[A \mid b]$</li>
+  <li>Brug <strong>Gauss-Jordan elimination</strong> for at opnå <strong>reduceret trappeform</strong></li>
+  <li>Aflæs løsningen:
+    <ul>
+      <li>Hvis systemet er entydigt løst: én løsning</li>
+      <li>Hvis fri variable: uendelig mange løsninger, skriv som parameterudtryk</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="13-hvor-mange-løsninger-har-systemet-ax--0">13. Hvor mange løsninger har systemet Ax = 0?</h2>
+
+<p>Systemet $Ax = 0$ har altid <strong>mindst én løsning</strong>: den trivielle $x = 0$</p>
+
+<p>Antal løsninger afhænger af <strong>rangen</strong>:</p>
+<ul>
+  <li>Hvis rang $A = n$: kun triviel løsning</li>
+  <li>Hvis rang $A &lt; n$: uendelig mange løsninger</li>
+</ul>
+
+<hr />
+
+<h2 id="14-hvornår-har-systemet-ax--0-kun-den-trivielle-løsning">14. Hvornår har systemet Ax = 0 kun den trivielle løsning?</h2>
+<p>Hvis matrix $A \in \mathbb{R}^{m \times n}$ har <strong>fuld søjlerang</strong>, altså $\text{rang}(A) = n$, så har systemet kun løsningen:</p>
+
+\[x = 0\]
+
+<hr />
+
+<h2 id="15-hvordan-defineres-rangen-af-en-matrix">15. Hvordan defineres rangen af en matrix?</h2>
+
+<p><strong>Rangen</strong> af en matrix $A$ er <strong>antallet af lineært uafhængige rækker (eller søjler)</strong>.</p>
+
+<p>= antallet af <strong>pivot-elementer</strong> i trappeformen</p>
+
+<hr />
+
+<h2 id="16-hvad-siger-sætningen-om-rang-og-løsning-af-systemet-ax--b">16. Hvad siger sætningen om rang og løsning af systemet $Ax = b$?</h2>
+
+<p>Systemet $Ax = b$ er <strong>løseligt</strong> hvis og kun hvis:</p>
+
+\[\text{rang}(A) = \text{rang}([A \mid b])\]
+
+<p>Hvis løsningen findes, og $\text{rang}(A) = n$: entydig løsning<br />
+Hvis $\text{rang}(A) &lt; n$: uendeligt mange løsninger</p>
+
+<hr />
+
+<h2 id="17-giv-eksempler-på-vektorer-i-mathbbrn">17. Giv eksempler på vektorer i $\mathbb{R}^n$</h2>
+
+<p>Eksempel på en vektor i $\mathbb{R}^3$:</p>
+
+\[v = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}\]
+
+<p>Det er blot en kolonne med 3 reelle tal.</p>
+
+<hr />
+
+<h2 id="18-hvordan-defineres-lineær-kombination-af-vektorer">18. Hvordan defineres lineær kombination af vektorer?</h2>
+
+<p>En <strong>lineær kombination</strong> af vektorer $v_1, v_2, \dots, v_k \in \mathbb{R}^n$ er:</p>
+
+\[a_1 v_1 + a_2 v_2 + \dots + a_k v_k\]
+
+<p>hvor $a_i \in \mathbb{R}$</p>
+
+<hr />
+
+<h2 id="19-hvornår-siges-en-mængde-af-vektorer-at-være-lineært-afhængigeuafhængige">19. Hvornår siges en mængde af vektorer at være lineært afhængige/uafhængige?</h2>
+
+<ul>
+  <li><strong>Afhængige:</strong> En vektor kan skrives som lineær kombination af de andre</li>
+  <li><strong>Uafhængige:</strong> Ingen vektor kan skrives som lineær kombination af de andre</li>
+</ul>
+
+<p>Formelt:<br />
+\(a_1 v_1 + \dots + a_k v_k = 0 \quad \Rightarrow \quad a_1 = \dots = a_k = 0\)</p>
+
+<hr />
+<h2 id="20-hvad-er-søjlerummet-for-en-matrix">20. Hvad er søjlerummet for en matrix?</h2>
+
+<p><strong>Søjlerummet</strong> (column space) for matrix $A \in \mathbb{R}^{m \times n}$ er:</p>
+
+\[\text{Col}(A) = \{ Ax \mid x \in \mathbb{R}^n \} \subseteq \mathbb{R}^m\]
+
+<p>= mængden af alle lineære kombinationer af søjlerne i $A$</p>
+
+<h2 id="21-hvordan-udregner-man-determinanter-af-22-og-33-matricer">21. Hvordan udregner man determinanter af 2×2 og 3×3-matricer?</h2>
+
+<ul>
+  <li><strong>2×2 matrix:</strong></li>
+</ul>
+
+\[\det\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} = ad - bc\]
+
+<ul>
+  <li><strong>3×3 matrix:</strong></li>
+</ul>
+
+<p>Brug sarrus-reglen eller kofaktorudvikling:</p>
+
+\[\det\begin{bmatrix}
+a &amp; b &amp; c \\
+d &amp; e &amp; f \\
+g &amp; h &amp; i
+\end{bmatrix}
+= aei + bfg + cdh - ceg - bdi - afh\]
+
+<hr />
+
+<h2 id="22-hvad-betyder-kofaktorudvidelse">22. Hvad betyder kofaktorudvidelse?</h2>
+
+<p>Kofaktorudvidelse (Laplace-udvikling) betyder at bestemme determinanten af en matrix ved at:</p>
+
+<ul>
+  <li>Udvikle langs en række eller søjle:</li>
+</ul>
+
+\[\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} \cdot \det(A_{ij})\]
+
+<p>hvor $A_{ij}$ er undermatricen uden række $i$ og søjle $j$.</p>
+
+<hr />
+
+<h2 id="23-hvad-sker-med-deta-når-man-bytter-to-rækker-eller-søjler">23. Hvad sker med $\det(A)$, når man bytter to rækker eller søjler?</h2>
+
+<ul>
+  <li>Når man bytter to <strong>rækker</strong> eller <strong>søjler</strong> i $A$, så ændrer determinanten <strong>fortegn</strong>:</li>
+</ul>
+
+\[\det(\text{byttet } A) = -\det(A)\]
+
+<hr />
+
+<h2 id="24-hvad-sker-med-deta-når-man-lægger-et-multiplum-af-én-række-til-en-anden">24. Hvad sker med $\det(A)$, når man lægger et multiplum af én række til en anden?</h2>
+
+<ul>
+  <li>Determinanten <strong>ændrer ikke værdi</strong>:</li>
+</ul>
+
+\[\det(A) = \det(A + \lambda \cdot \text{anden række})\]
+
+<p>Gælder også for søjler.</p>
+
+<hr />
+
+<h2 id="25-hvad-gælder-for-determinanter-under-transponering-og-multiplikation">25. Hvad gælder for determinanter under transponering og multiplikation?</h2>
+
+<ul>
+  <li>
+\[\det(A^T) = \det(A)\]
+  </li>
+  <li>
+\[\det(AB) = \det(A) \cdot \det(B)\]
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="26-hvis-a-er-inverterbar-hvad-er-deta-1">26. Hvis $A$ er inverterbar, hvad er $\det(A^{-1})$?</h2>
+
+\[\det(A^{-1}) = \frac{1}{\det(A)}\]
+
+<p>Fordi:</p>
+
+\[\det(I) = \det(A A^{-1}) = \det(A) \cdot \det(A^{-1}) = 1\]
+
+<hr />
+
+<h2 id="27-antag-at-s-er-symmetrisk-og-inverterbar-vis-at-s-1-også-er-symmetrisk">27. Antag at $S$ er symmetrisk og inverterbar. Vis at $S^{-1}$ også er symmetrisk.</h2>
+
+<p>Hvis $S = S^T$, og $S$ er inverterbar:</p>
+
+<ul>
+  <li>Tag transponatet:</li>
+</ul>
+
+\[(S^{-1})^T = (S^T)^{-1} = S^{-1}\]
+
+<ul>
+  <li>Altså: $S^{-1} = (S^{-1})^T$, dvs. <strong>symmetrisk</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="28-hvad-er-en-ortogonal-matrix-u">28. Hvad er en ortogonal matrix $U$?</h2>
+
+<p>En kvadratisk matrix $U$ er <strong>ortogonal</strong>, hvis:</p>
+
+\[U^{-1} = U^T \quad \text{eller} \quad U^T U = I\]
+
+<p>Det betyder, at søjlerne i $U$ er <strong>ortonormale</strong>.</p>
+
+<hr />
+
+<h2 id="29-er-produktet-u_1-u_2-af-to-ortogonale-matricer-igen-ortogonal">29. Er produktet $U_1 U_2$ af to ortogonale matricer igen ortogonal?</h2>
+
+<p>Ja!</p>
+
+<ul>
+  <li>Hvis $U_1$ og $U_2$ er ortogonale:</li>
+</ul>
+
+\[(U_1 U_2)^T (U_1 U_2) = U_2^T U_1^T U_1 U_2 = U_2^T I U_2 = U_2^T U_2 = I\]
+
+<p>Altså er $U_1 U_2$ ortogonal.</p>
+
+<hr />
+
+<h2 id="30-hvad-forstår-vi-ved-en-linearkombination-af-vektorerne-v_1--v_k">30. Hvad forstår vi ved en linearkombination af vektorerne $v_1, …, v_k$?</h2>
+
+<p>En <strong>linearkombination</strong> af vektorer $v_1, …, v_k$ er:</p>
+
+\[a_1 v_1 + a_2 v_2 + \dots + a_k v_k
+\quad \text{hvor } a_i \in \mathbb{R}\]
+
+<p>Det er en måde at danne nye vektorer ud fra givne vektorer.</p>
+
+<h2 id="31-hvad-er-textspanv_1-dots-v_k">31. Hvad er $\text{span}{v_1, \dots, v_k}$?</h2>
+
+<p>Det er mængden af alle linearkombinationer af $v_1, \dots, v_k$:</p>
+
+\[\text{span}\{v_1, \dots, v_k\} = \left\{ \sum_{i=1}^k a_i v_i \mid a_i \in \mathbb{R} \right\}\]
+
+<p>Span er altså et underrum bestående af alle vektorer, man kan danne ved linearkombination.</p>
+
+<hr />
+
+<h2 id="32-hvornår-siger-vi-at-vektorerne-v_1-dots-v_k-er-lineært-uafhængige">32. Hvornår siger vi, at vektorerne $v_1, \dots, v_k$ er lineært uafhængige?</h2>
+
+<p>De er lineært uafhængige, hvis:</p>
+
+\[c_1 v_1 + \dots + c_k v_k = 0 \Rightarrow c_1 = \dots = c_k = 0\]
+
+<p>Dvs. den eneste linearkombination, der giver nulvektoren, er den trivielle.</p>
+
+<hr />
+
+<h2 id="33-hvad-er-et-underrum-v-subseteq-mathbbrn">33. Hvad er et underrum $V \subseteq \mathbb{R}^n$?</h2>
+
+<p>Et underrum $V$ er en delmængde af $\mathbb{R}^n$, som opfylder:</p>
+
+<ul>
+  <li>$0 \in V$</li>
+  <li>Lukket under addition: $u, v \in V \Rightarrow u + v \in V$</li>
+  <li>Lukket under skalering: $c \in \mathbb{R}, v \in V \Rightarrow c \cdot v \in V$</li>
+</ul>
+
+<hr />
+
+<h2 id="34-hvad-er-nulrummet-til-en-givet-matrix-a">34. Hvad er nulrummet til en givet matrix $A$?</h2>
+
+<p>Nulrummet er mængden af løsninger til $Ax = 0$:</p>
+
+\[\text{Nul}(A) = \{ x \in \mathbb{R}^n \mid Ax = 0 \}\]
+
+<p>Det er et underrum af $\mathbb{R}^n$.</p>
+
+<hr />
+
+<h2 id="35-hvad-er-søjlerummet-til-en-givet-matrix-a">35. Hvad er søjlerummet til en givet matrix $A$?</h2>
+
+<p>Søjlerummet er mængden af alle linearkombinationer af søjlerne i $A$:</p>
+
+\[\text{Col}(A) = \text{span}\{\text{søjlerne i } A\}\]
+
+<p>Det er et underrum af $\mathbb{R}^m$, hvor $A$ er $m \times n$.</p>
+
+<hr />
+
+<h2 id="36-hvad-er-rang-af-en-matrix">36. Hvad er rang af en matrix?</h2>
+
+<p>Rangen af $A$ er dimensionen af søjlerummet:</p>
+
+\[\text{rang}(A) = \dim(\text{Col}(A))\]
+
+<p>Det er også antal ledende 1-taller i en reduceret trappeform.</p>
+
+<hr />
+
+<h2 id="37-hvad-er-en-basis-af-et-underrum-v-subseteq-mathbbrn">37. Hvad er en basis af et underrum $V \subseteq \mathbb{R}^n$?</h2>
+
+<p>En basis er en mængde vektorer:</p>
+
+<ul>
+  <li>Som <strong>spænder over</strong> $V$</li>
+  <li>Som er <strong>lineært uafhængige</strong></li>
+</ul>
+
+\[\text{Basis } \Rightarrow \text{minimalt sæt, der genererer } V\]
+
+<hr />
+
+<h2 id="38-hvad-kan-man-sige-om-søjlerne-i-en-inverterbar-n-times-n-matrix">38. Hvad kan man sige om søjlerne i en inverterbar $n \times n$-matrix?</h2>
+
+<p>De danner en basis for $\mathbb{R}^n$:</p>
+
+\[A \text{ inverterbar } \Leftrightarrow \text{søjlerne i } A \text{ er lineært uafhængige og spænder over } \mathbb{R}^n\]
+
+<hr />
+
+<h2 id="39-hvornår-er-to-vektorer-v-og-w-ortogonale">39. Hvornår er to vektorer $v$ og $w$ ortogonale?</h2>
+
+<p>Hvis deres indre produkt er 0:</p>
+
+\[v \cdot w = 0 \Rightarrow v \perp w\]
+
+<hr />
+
+<h2 id="40-hvad-er-formlen-for-den-ortogonale-projektion-af-x-på-textspanv_1-dots-v_k-hvis-de-er-ortogonale">40. Hvad er formlen for den ortogonale projektion af (x) på (\text{span}{v_1, \dots, v_k}), hvis de er ortogonale?</h2>
+
+<p>Projektionen (P x) er givet ved:</p>
+
+\[P x = \sum_{j=1}^k \frac{v_j \cdot x}{v_j \cdot v_j} v_j\]
+
+<p>Gælder kun hvis (v_j)‘erne er parvist ortogonale (ortogonal mængde).</p>
+
+<h2 id="41-hvad-er-en-ortonormalbasis-af-mathbbrn">41. Hvad er en ortonormalbasis af (\mathbb{R}^n)?</h2>
+
+<p>En ortonormalbasis er en basis hvor vektorerne både er</p>
+
+<ul>
+  <li><strong>Ortogonale:</strong> $v_i \cdot v_j = 0$ for $i \neq j$</li>
+  <li><strong>Normerede:</strong> $|v_i| = 1$</li>
+</ul>
+
+<p>Dvs. vektorerne er ortogonale og har længde 1.</p>
+
+<hr />
+
+<h2 id="42-hvad-kan-man-sige-om-søjlerne-i-en-ortogonal-n-times-n-matrix-u">42. Hvad kan man sige om søjlerne i en ortogonal (n \times n)-matrix (U)?</h2>
+
+<p>Søjlerne i (U) danner en ortonormalbasis for $\mathbb{R}^n$</p>
+
+<p>Det betyder også:</p>
+
+\[U^T U = U U^T = I\]
+
+<hr />
+
+<h2 id="43-hvad-er-en-egenværdi-af-en-n-times-n-matrix-a">43. Hvad er en egenværdi af en (n \times n)-matrix (A)?</h2>
+
+<p>Et tal (\omega), sådan at der findes en ikke-nul vektor $v \in \mathbb{R}^n$ med</p>
+
+\[A v = \omega v\]
+
+<p>Vektoren $v$ kaldes en egenvektor til egenværdien $\omega$.</p>
+
+<hr />
+
+<h2 id="44-hvordan-kan-jeg-bestemme-egenværdierne-af-a">44. Hvordan kan jeg bestemme egenværdierne af (A)?</h2>
+
+<p>Egenværdierne er nulpunkterne til det karakteristiske polynomium:</p>
+
+\[\det(A - \omega I) = 0\]
+
+<p>Løsning af denne ligning giver egenværdierne $\omega$</p>
+
+<hr />
+
+<h2 id="45-hvad-er-egenrummet-af-a-til-egenværdien-omega">45. Hvad er egenrummet af $A$ til egenværdien $\omega$?</h2>
+
+<p>Egenrummet er mængden af alle egenvektorer til $\omega$ plus nulvektoren:</p>
+
+\[\text{Nul}(A - \omega I) = \{ v \mid (A - \omega I)v = 0 \}\]
+
+<hr />
+
+<h2 id="46-hvordan-kan-jeg-bestemme-egenvektorer-v-til-egenværdien-omega">46. Hvordan kan jeg bestemme egenvektorer $v$ til egenværdien $\omega$?</h2>
+
+<p>Løs det homogene ligningssystem:</p>
+
+\[(A - \omega I) v = 0\]
+
+<p>Alle løsninger $v \neq 0$ er egenvektorer til $\omega$.</p>
+
+<hr />
+
+<h2 id="47-hvornår-kaldes-en-n-times-n--matrix--a-diagonaliserbar">47. Hvornår kaldes en $n \times n -matrix  A$ diagonaliserbar?</h2>
+
+<p>Hvis den er similær med en diagonal matrix $D$, dvs. hvis der findes en inverterbar matrix $P$, så</p>
+
+\[A = P D P^{-1}\]
+
+<hr />
+
+<h2 id="48-hvis-a--p-d-p-1-er-en-diagonalisering-af-a-hvad-er-indgangene-i-d-og-p">48. Hvis $A = P D P^{-1}$ er en diagonalisering af $A$, hvad er indgangene i $D$ og $P$?</h2>
+
+<ul>
+  <li>Diagonalen i $D$ indeholder egenværdierne til $A$.</li>
+  <li>Søjlerne i $P$ er egenvektorer til $A$, i samme rækkefølge som egenværdierne i $D$.</li>
+</ul>
+
+<hr />
+
+<h2 id="49-er-alle-kvadratiske-matricer-diagonaliserbare">49. Er alle kvadratiske matricer diagonaliserbare?</h2>
+
+<p>Nej, ikke alle er diagonaliserbare.</p>
+
+<hr />
+
+<h2 id="50-hvornår-er-en-kvadratisk-matrix-a-diagonaliserbar">50. Hvornår er en kvadratisk matrix (A) diagonaliserbar?</h2>
+
+<p>Hvis og kun hvis for hver egenværdi stemmer den algebraiske multiplicitet overens med den geometriske multiplicitet.</p>
+
+<h2 id="51-hvad-ved-man-om-symmetriske-matricer">51. Hvad ved man om symmetriske matricer?</h2>
+
+<p>En symmetrisk matrix $S$ er altid diagonaliserbar — faktisk er $S$ endda ortogonalt diagonaliserbar, dvs. der findes en diagonal matrix $D$ og en ortogonal matrix $U$ sådan at</p>
+
+\[S = U D U^T\]
+
+<p>(hvor $U^T = U^{-1}$, fordi $U$ er ortogonal).</p>
+
+<hr />
+
+<h2 id="52-hvad-er-en-mindste-kvadraters-løsning-til-ax--b">52. Hvad er en mindste kvadraters løsning til $Ax = b$?</h2>
+
+<p>En vektor $\hat{x}$, sådan at</p>
+
+\[|b - A \hat{x}| \leq \|b - A x\| \quad \text{for alle } x\]
+
+<p>Dvs. $\hat{x}$ minimerer den kvadrerede afstand mellem $b$ og $A x$.</p>
+
+<hr />
+
+<h2 id="53-hvordan-kan-man-bestemme-mindste-kvadraters-løsninger">53. Hvordan kan man bestemme mindste kvadraters løsninger?</h2>
+
+<p>$\hat{x}$ er mindste kvadraters løsning til $Ax = b$ hvis og kun hvis $\hat{x}$ løser normalligningen:</p>
+
+\[A^T A \hat{x} = A^T b\]
+
+<hr />
+
+<h2 id="54-er-mindste-kvadraters-løsninger-entydige">54. Er mindste kvadraters løsninger entydige?</h2>
+
+<p>Ikke altid. De er entydige hvis og kun hvis $A$ har fuld rang, eller ækvivalent hvis $A^T A$ er inverterbar.</p>
+
+<hr />
+
+<h2 id="55-hvornår-giver-det-mening-at-bruge-mindste-kvadraters-metoden">55. Hvornår giver det mening at bruge mindste kvadraters metoden?</h2>
+
+<p>Når man ikke har nogen grund til at tro, eller ikke er sikker på, at det oprindelige system $Ax = b$ er konsistent.</p>
+
+<hr />
+
+<h2 id="56-hvad-hvis-jeg-udregner-en-mindste-kvadraters-løsning-hatx-til-et-system-ax--b-som-faktisk-er-konsistent">56. Hvad, hvis jeg udregner en mindste kvadraters løsning $\hat{x}$ til et system $Ax = b$, som faktisk er konsistent?</h2>
+
+<p>Så er enhver mindste kvadraters løsning $\hat{x}$ også en almindelig løsning til $Ax = b$, dvs.</p>
+
+\[A \hat{x} = b\]
+
+<hr />
+
+<h2 id="57-hvad-er-et-lineært-programmeringsproblem-på-kanonisk-form">57. Hvad er et lineært programmeringsproblem på kanonisk form?</h2>
+
+<p>Maksimer</p>
+
+\[c^T x\]
+
+<p>under bibetingelserne</p>
+
+\[A x \leq b, \quad x \geq 0\]
+
+<hr />
+
+<h2 id="58-hvordan-kan-bibetingelser-som-a_it-x-geq-b_i-eller-a_it-x--b_i-omskrives-i-et-lineært-programmeringsproblem-på-kanonisk-form">58. Hvordan kan bibetingelser som $a_i^T x \geq b_i$ eller $a_i^T x = b_i$ omskrives i et lineært programmeringsproblem på kanonisk form?</h2>
+
+<ul>
+  <li>$a_i^T x \geq b_i$ omskrives som $-a_i^T x \leq -b_i$</li>
+  <li>$a_i^T x = b_i$ omskrives som to uligheder: $a_i^T x \leq b_i$ og $a_i^T x \geq b_i$</li>
+</ul>
+
+<hr />
+
+<h2 id="59-hvad-hvis-man-vil-minimere-ct-x-kan-man-stadigvæk-opstille-et-lineært-programmeringsproblem-på-kanonisk-form">59. Hvad, hvis man vil minimere $c^T x$: kan man stadigvæk opstille et lineært programmeringsproblem på kanonisk form?</h2>
+
+<p>Ja, minimere $c^T x$ kan omskrives til maksimering af $-c^T x$.</p>
+
+<hr />
+
+<h2 id="60-kender-du-to-situationer-hvor-man-ikke-finder-en-optimal-løsning-til-et-lineært-programmeringsproblem">60. Kender du to situationer, hvor man ikke finder en optimal løsning til et lineært programmeringsproblem?</h2>
+
+<ol>
+  <li>Feasibility set $F$ er tomt (ingen løsninger).</li>
+  <li>$c^T x$ er ubegrænset på $F$ (ingen maksimum).</li>
+</ol>
+
+<hr />
+
+<h2 id="61-hvis-f-ikke-er-tom-og-ct-x-er-begrænset-på-f-hvor-i-f-ligger-de-optimale-løsninger">61. Hvis $F$ ikke er tom og $c^T x$ er begrænset på $F$, hvor i $F$ ligger de optimale løsninger?</h2>
+
+<p>Mindst én optimal løsning findes i et ekstremalpunkt (hjørnepunkt) af den konvekse mængde $F$</p>
+
+<hr />
+
+<h2 id="62-skitser-mængden-f-af-alle-vektorer-x--x_1-x_2-der-opfylder">62. Skitser mængden $F$ af alle vektorer $x = (x_1, x_2)$, der opfylder</h2>
+
+\[0 \leq x_1 \leq 2, \quad 0 \leq x_2 \leq 2, \quad x_1 + x_2 \leq 3\]
+
+<p>Hvilke punkter i $F$ ville du afprøve som mulige optimale løsninger i den grafiske metode?</p>
+
+<p>Svar: De mulige optimale løsninger ligger i hjørnerne af $F$:</p>
+
+\[(0,0), (2,0), (0,2), (2,1), (1,2)\]
+
+<hr />
+
+<h2 id="63-hvordan-opstiller-man-en-initial-simplextableau-begyndelsessimplextableau-for-et-lineært-programmeringsproblem-på-kanonisk-form">63. Hvordan opstiller man en initial simplextableau (begyndelsessimplextableau) for et lineært programmeringsproblem på kanonisk form?</h2>
+
+<ul>
+  <li>Tilføj slack-variabler for at omskrive uligheder til ligheder.</li>
+  <li>Antal slack-variabler svarer til antallet af uligheder.</li>
+  <li>Objektfunktionen tilføjes som sidste række i tableau.</li>
+</ul>
+
+<hr />
+
+<h2 id="64-beskriv-algoritmen-i-simplexmetoden-i-tilfælde-hvor-alle-indgange-i-b-er-positive">64. Beskriv algoritmen i simplexmetoden i tilfælde, hvor alle indgange i $b$ er positive!</h2>
+
+<ul>
+  <li>Vælg indgangsvariabel (variabel med mest negativ koefficient i objektfunktionen).</li>
+  <li>Bestem udgangsvariabel via minimum ratio test.</li>
+  <li>Udfør pivotering.</li>
+  <li>Gentag indtil ingen negative koefficienter i objektfunktionen.</li>
+  <li>Optimal løsning aflæses i tableau.</li>
+</ul>
+
+<hr />
+
+<h2 id="65-kan-man-gøre-noget-hvis-b-har-en-eller-flere-negative-indgange">65. Kan man gøre noget, hvis $b$ har en eller flere negative indgange?</h2>
+
+<p>Ja, man kan bruge en “big M” metode eller to-fase simplex til at starte med en basisløsning.</p>
+
+<hr />
+
+<h2 id="66-hvad-er-det-duale-problem-til-et-lineært-programmeringsproblem-på-kanonisk-form">66. Hvad er det duale problem til et lineært programmeringsproblem på kanonisk form?</h2>
+
+<p>Hvis primalproblemet er</p>
+
+\[\max c^T x \quad \text{under} \quad A x \leq b, \quad x \geq 0\]
+
+<p>så er det duale problem</p>
+
+\[\min b^T y \quad \text{under} \quad A^T y \geq c, \quad y \geq 0\]
+
+<hr />
+
+<h2 id="67-hvad-er-udsagnet-af-dualitetssætningen-om-lineære-programmeringsproblemer-samt-deres-duale-problemer">67. Hvad er udsagnet af dualitetssætningen om lineære programmeringsproblemer samt deres duale problemer?</h2>
+
+<p>Hvis primalproblemet har en optimal løsning, så har dualproblemet også en optimal løsning, og deres optimale værdier er ens:</p>
+
+\[\max c^T x = \min b^T y\]
+
+<p>Desuden, hvis enten primal eller dual har ubegrænset løsning, så er det modsatte problem ufeasible.</p>]]></content><author><name>Esben Jørgensen</name></author><summary type="html"><![CDATA[layout: post title: “Linear Algebra Example” date: 2025-06-10 categories: [blog] —]]></summary></entry><entry><title type="html">Linear Algebra</title><link href="http://localhost:4000/2025/06/06/linear-algebra.html" rel="alternate" type="text/html" title="Linear Algebra" /><published>2025-06-06T00:00:00+02:00</published><updated>2025-06-06T00:00:00+02:00</updated><id>http://localhost:4000/2025/06/06/linear-algebra</id><content type="html" xml:base="http://localhost:4000/2025/06/06/linear-algebra.html"><![CDATA[<hr />
+<p>layout: post
+title: “Linear Algebra Ordbog”
+date: 2025-06-10
+categories: [blog]
+—</p>
+
+<h1 id="lial-ordliste">LIAL, Ordliste</h1>
+<h1 id="dansk-engelsk">Dansk-Engelsk</h1>
+
+<h1 id="a">A</h1>
+<h3 id="afbildning">afbildning</h3>
+<p><em>map, transformation</em><br />
+En regel eller funktion der “flytter” en vektor fra ét rum til et andet – fx ved rotation, skalering eller forskydning.</p>
+
+<h1 id="b">B</h1>
+<h3 id="basisskift">basisskift</h3>
+<p><em>change of basis</em><br />
+Når man udtrykker vektorer i en ny basis, f.eks. fordi det forenkler en beregning eller tilpasser til en ny geometri.</p>
+
+<h3 id="bijektion">bijektion</h3>
+<p><em>one-to-one correspondence, bijection</em><br />
+En funktion hvor hvert input svarer til ét unikt output, og hvert output dækkes.</p>
+
+<h3 id="bijektiv-funktion">bijektiv funktion</h3>
+<p><em>one-to-one correspondence, bijection</em><br />
+En funktion der både er injektiv (ingen gentagelser i output) og surjektiv (alle outputs bruges).</p>
+
+<h3 id="bijektiv">bijektiv</h3>
+<p><em>bijective</em><br />
+En egenskab ved funktioner: både injektiv og surjektiv, altså perfekt match mellem input og output.</p>
+
+<h3 id="billede">billede</h3>
+<p><em>image</em><br />
+Alle de vektorer man får ud efter en afbildning – altså resultatet af at transformere hele definitionsmængden.</p>
+
+<h3 id="billedmængde">billedmængde</h3>
+<p><em>range (se også værdimængde)</em><br />
+Det sæt af outputs en funktion faktisk rammer, ofte et underrum af kodomænet.</p>
+
+<h1 id="d">D</h1>
+<h3 id="definitionsmængde">definitionsmængde</h3>
+<p><em>domain</em><br />
+Alle de inputværdier man må give til en funktion – altså hvor funktionen er defineret.</p>
+
+<h3 id="delmængde">delmængde</h3>
+<p><em>subset</em><br />
+En mængde hvor alle elementer også findes i en større mængde.</p>
+
+<h3 id="determinant">determinant</h3>
+<p><em>determinant</em><br />
+Et tal der fortæller om en matrix skalerer, spejler eller vender rummet – fx hvor meget et areal/volumen ændres.</p>
+
+<h3 id="diagonaliserbar">diagonaliserbar</h3>
+<p><em>diagonalizable</em><br />
+En matrix er diagonaliserbar hvis den kan omskrives til en diagonal matrix vha. en basistransformation.</p>
+
+<h3 id="diagonalisering">diagonalisering</h3>
+<p><em>diagonalization</em><br />
+Processen med at omskrive en matrix til en diagonal form, ved hjælp af egenværdier og egenvektorer.</p>
+
+<h3 id="dimension">dimension</h3>
+<p><em>dimension</em><br />
+Antallet af uafhængige retninger i et rum – fx 2 i et plan, 3 i rum. Også antal basisvektorer.</p>
+
+<h3 id="disjunkte">disjunkte</h3>
+<p><em>disjoint</em><br />
+To mængder er disjunkte, hvis de ikke har noget til fælles – deres fællesmængde er tom.</p>
+
+<h3 id="dispositionsmængde">dispositionsmængde</h3>
+<p><em>codomain</em><br />
+Alle mulige outputværdier som en funktion kan antage – ikke nødvendigvis alle bliver ramt.</p>
+
+<h1 id="e">E</h1>
+<h3 id="echelonform">echelonform</h3>
+<p><em>echelon form (se også trappeform)</em><br />
+En matrix er i echelonform, hvis dens rækker “trapper ned” med nuller foran, og pivoterne står til højre for den ovenstående.</p>
+
+<h3 id="element">element</h3>
+<p><em>entry</em><br />
+Et enkelt tal eller værdi i en matrix eller vektor – også kaldet en indgang.</p>
+
+<h3 id="egenrum">egenrum</h3>
+<p><em>eigenspace</em><br />
+Alle egenvektorer (og deres linearkombinationer) der hører til en bestemt egenværdi – altså rummet af løsninger til ((A - \lambda I)x = 0).</p>
+
+<h3 id="egenvektor">egenvektor</h3>
+<p><em>eigenvector</em><br />
+En vektor som ved transformation kun bliver skaleret, ikke ændret retning – opfylder (Av = \lambda v).</p>
+
+<h3 id="egenværdi">egenværdi</h3>
+<p><em>eigenvalue</em><br />
+Tallet (\lambda) som fortæller hvor meget en egenvektor skaleres ved transformation.</p>
+
+<h3 id="endelig">endelig</h3>
+<p><em>finite</em><br />
+Betyder at noget har et begrænset antal elementer eller størrelse – modsætning til uendelig.</p>
+
+<h1 id="f">F</h1>
+<h3 id="foreningsmængde">foreningsmængde</h3>
+<p><em>union</em><br />
+Mængden af alle elementer fra to (eller flere) mængder – alt der optræder mindst én gang.</p>
+
+<h3 id="fællesmængde">fællesmængde</h3>
+<p><em>intersection</em><br />
+Det som to (eller flere) mængder har til fælles – altså de overlappende elementer.</p>
+
+<h1 id="g">G</h1>
+<h3 id="gauss-elimination">Gauss-elimination</h3>
+<p><em>Gaussian elimination</em><br />
+En metode til at omskrive et ligningssystem eller matrix til trappeform ved rækkeoperationer, for nemmere løsning.</p>
+
+<h1 id="h">H</h1>
+<h3 id="heltal">heltal</h3>
+<p><em>integer</em><br />
+Et tal uden decimaler – både positive, negative og nul: …, -3, -2, -1, 0, 1, 2, 3, …</p>
+
+<h3 id="hoveddiagonal">hoveddiagonal</h3>
+<p><em>main diagonal</em><br />
+Elementerne fra øverste venstre hjørne til nederste højre i en kvadratisk matrix – de hvor række- og søjleindeks er ens.</p>
+
+<h1 id="i">I</h1>
+<h3 id="identitetsmatrix">identitetsmatrix</h3>
+<p><em>identity matrix</em><br />
+En kvadratisk matrix med 1’ere på hoveddiagonalen og 0’er ellers – fungerer som “1” i matrixmultiplikation.</p>
+
+<h3 id="indgang">indgang</h3>
+<p><em>entry</em><br />
+Et andet ord for et element i en matrix eller vektor.</p>
+
+<h3 id="indre-produkt">indre produkt</h3>
+<p><em>inner product</em><br />
+Et mål for “længde og vinkel” mellem to vektorer – i Rⁿ svarer det til prikproduktet.</p>
+
+<h3 id="injektiv">injektiv</h3>
+<p><em>injective, one-to-one</em><br />
+En funktion er injektiv hvis hvert output stammer fra ét unikt input – ingen gentagelser.</p>
+
+<h3 id="inverterbar">inverterbar</h3>
+<p><em>invertible (se også invertibel)</em><br />
+En matrix der har en omvendt (inverse) matrix, så (A^{-1}A = I). Kun muligt hvis determinanten er forskellig fra nul.</p>
+
+<h3 id="invertibel">invertibel</h3>
+<p><em>invertible (se også inverterbar)</em><br />
+Samme som ovenfor – betyder at transformationen kan “rulles tilbage”.</p>
+
+<h1 id="k">K</h1>
+<h3 id="kanonisk-basis">kanonisk basis</h3>
+<p><em>standard basis</em><br />
+En basis bestående af enhedsvektorer – fx ([1,0,0], [0,1,0], [0,0,1]) i R³.</p>
+
+<h3 id="karakteristisk-ligning">karakteristisk ligning</h3>
+<p><em>characteristic equation</em><br />
+Ligningen (\det(A - \lambda I) = 0) som bruges til at finde egenværdier.</p>
+
+<h3 id="karakteristisk-polynomium">karakteristisk polynomium</h3>
+<p><em>characteristic polynomial</em><br />
+Polynomiet (\det(A - \lambda I)), hvis rødder er egenværdierne.</p>
+
+<h3 id="kofaktor">kofaktor</h3>
+<p><em>cofactor</em><br />
+Et tal man får ved at tage determinanten af en mindre matrix (minor), ganget med ((-1)^{i+j}).</p>
+
+<h3 id="kofaktorudvidelse">kofaktorudvidelse</h3>
+<p><em>cofactor expansion</em><br />
+En metode til at beregne determinanter ved at ekspandere langs en række eller søjle med kofaktorer.</p>
+
+<h3 id="koordinatvektor">koordinatvektor</h3>
+<p><em>coordinate vector</em><br />
+En vektor der viser, hvordan en vektor er sammensat ud fra en valgt basis.</p>
+
+<h3 id="korollar">korollar</h3>
+<p><em>corollary</em><br />
+En sætning der følger direkte af en anden sætning eller bevis – altså en slags “konsekvens”.</p>
+
+<h1 id="l">L</h1>
+<h3 id="ledende-koefficient">ledende koefficient</h3>
+<p><em>leading entry</em><br />
+Den første ikke-nul værdi i en række i en matrix – bruges til at finde pivoter.</p>
+
+<h3 id="lemma">lemma</h3>
+<p><em>lemma</em><br />
+En hjælpesætning der bruges som del af et større bevis.</p>
+
+<h3 id="linearkombination">linearkombination</h3>
+<p><em>linear combination</em><br />
+En sum af vektorer ganget med skalarer – fx (2v_1 + 3v_2).</p>
+
+<h3 id="lineær-uafhængig">lineær (u)afhængig</h3>
+<p><em>linearly (in)dependent</em><br />
+Vektorer er uafhængige hvis ingen kan skrives som kombination af de andre – ellers er de afhængige.</p>
+
+<h3 id="lineær-uafhængighed">lineær (u)afhængighed</h3>
+<p><em>linear (in)dependence</em><br />
+Egenskaben af et vektorsæt – om det er muligt at udtrykke én som en kombination af de andre.</p>
+
+<h1 id="m">M</h1>
+<h3 id="mindste-kvadraters-metode">mindste kvadraters metode</h3>
+<p><em>method of least squares</em><br />
+En metode til at finde den bedste (mindst fejlagtige) løsning til et overbestemt system – f.eks. i regression.</p>
+
+<h3 id="underdeterminant">underdeterminant</h3>
+<p><em>minor</em><br />
+Det man får ved at fjerne én række og én søjle fra en matrix og tage determinanten af det resterende.</p>
+
+<h3 id="mængde">mængde</h3>
+<p><em>set</em><br />
+En samling af unikke elementer – fx {1, 2, 3}.</p>
+
+<h1 id="n">N</h1>
+<h3 id="nullitet">nullitet</h3>
+<p><em>nullity</em><br />
+Dimensionen af nulrummet – altså hvor mange frie variable der er i løsningen af (Ax = 0).</p>
+
+<h3 id="nulrum">nulrum</h3>
+<p><em>null space</em><br />
+Mængden af alle vektorer (x) der opfylder (Ax = 0). Et underrum af definitionsmængden.</p>
+
+<h3 id="nulvektor">nulvektor</h3>
+<p><em>zero vector</em><br />
+En vektor hvor alle indgange er nul – længde 0 og ingen retning.</p>
+
+<h1 id="p">P</h1>
+<h3 id="pivotindgang">pivotindgang</h3>
+<p><em>pivot entry</em><br />
+Den første ikke-nul værdi i en række i en matrix – bruges til rækkeoperationer og trappeform.</p>
+
+<h3 id="pivotsøjle">pivotsøjle</h3>
+<p><em>pivot column</em><br />
+En søjle der indeholder en pivot – typisk en vigtig søjle ifm. løsning af ligninger.</p>
+
+<h1 id="r">R</h1>
+<h3 id="rang">rang</h3>
+<p><em>rank</em><br />
+Antallet af uafhængige rækker eller søjler i en matrix – afgør matrixens “styrke”.</p>
+
+<h3 id="regulær-matrix">regulær matrix</h3>
+<p><em>invertible matrix</em><br />
+En matrix der har en invers – kun mulig hvis rang = antal rækker (fuld rang).</p>
+
+<h3 id="række">række</h3>
+<p><em>row</em><br />
+En vandret linje i en matrix.</p>
+
+<h3 id="rækkereduktion">rækkereduktion</h3>
+<p><em>row reduction</em><br />
+Processen med at bruge rækkeoperationer til at bringe en matrix på echelonform eller reduceret echelonform.</p>
+
+<h1 id="s">S</h1>
+<h3 id="skalarprodukt">skalarprodukt</h3>
+<p><em>scalar product</em><br />
+Et tal man får ved at tage indre produkt af to vektorer – bruges fx til projektion og vinkelberegning.</p>
+
+<h3 id="singulær-matrix">singulær matrix</h3>
+<p><em>singular matrix</em><br />
+En matrix der <strong>ikke</strong> har en invers – typisk fordi determinanten er 0.</p>
+
+<h3 id="spænd">spænd</h3>
+<p><em>span</em><br />
+Alle mulige linearkombinationer af et vektorsæt – definerer et underrum.</p>
+
+<h3 id="standardbasis">standardbasis</h3>
+<p><em>standard basis (se også kanonisk basis)</em><br />
+De vektorer der peger i én og kun én retning – fx ([1,0], [0,1]) i R².</p>
+
+<h3 id="surjektiv">surjektiv</h3>
+<p><em>surjective, onto</em><br />
+En funktion hvor hvert output i kodomænet bliver ramt af mindst ét input.</p>
+
+<h3 id="sætning">sætning</h3>
+<p><em>theorem</em><br />
+En matematisk påstand der er blevet bevist ud fra aksiomer og tidligere sætninger.</p>
+
+<h3 id="søjle">søjle</h3>
+<p><em>column</em><br />
+En lodret linje i en matrix.</p>
+
+<h3 id="søjlerum">søjlerum</h3>
+<p><em>column space</em><br />
+Mængden af alle linearkombinationer af en matrix’ søjler – samme som billedmængde.</p>
+
+<h1 id="t">T</h1>
+<h3 id="totalmatrix">totalmatrix</h3>
+<p><em>augmented matrix (se også udvidet koefficientmatrix)</em><br />
+En matrix der indeholder både koefficienter og resultatled fra et ligningssystem.</p>
+
+<h3 id="transponering">transponering</h3>
+<p><em>transpose</em><br />
+Man bytter rækker og søjler i en matrix – altså spejler over hoveddiagonalen.</p>
+
+<h3 id="trappeform">trappeform</h3>
+<p><em>echelon form (se også echelonform)</em><br />
+En form hvor nuller er flyttet ned og til venstre i matrixen – giver trinvis struktur.</p>
+
+<h3 id="triangulær-matrix">triangulær matrix</h3>
+<p><em>triangular matrix</em><br />
+En matrix hvor alle elementer under eller over hoveddiagonalen er nul – enten øvre eller nedre triangulær.</p>
+
+<h3 id="triviel-løsning">triviel løsning</h3>
+<p><em>trivial solution</em><br />
+Den simple løsning (x = 0) til ligningen (Ax = 0).</p>
+
+<h1 id="u">U</h1>
+<h3 id="uendelig">uendelig</h3>
+<p><em>infinite</em><br />
+Ikke endeligt – noget uden grænse, fx en uendelig løsningsmængde.</p>
+
+<h3 id="udvidet-koefficientmatrix">udvidet koefficientmatrix</h3>
+<p><em>augmented matrix (se også totalmatrix)</em><br />
+En matrix der inkluderer både koefficienterne og resultatleddene fra et ligningssystem.</p>
+
+<h3 id="undermatrix">undermatrix</h3>
+<p><em>submatrix</em><br />
+En mindre matrix man får ved at fjerne rækker og/eller søjler fra en større matrix.</p>
+
+<h3 id="underrum">underrum</h3>
+<p><em>subspace</em><br />
+Et rum inden for et større vektor rum, som også opfylder regler for lukkethed under addition og skalering.</p>
+
+<h1 id="v">V</h1>
+<h3 id="vectorspænd">vectorspænd</h3>
+<p><em>vector span</em><br />
+Alle mulige linearkombinationer af et givet vektorsæt – definerer hvilket rum de “udspænder”.</p>
+
+<h3 id="værdimængde">værdimængde</h3>
+<p><em>image/range (se også billedmængde)</em><br />
+Det sæt af outputværdier som en funktion faktisk rammer – samme som billedmængde.</p>]]></content><author><name>Esben Jørgensen</name></author><summary type="html"><![CDATA[layout: post title: “Linear Algebra Ordbog” date: 2025-06-10 categories: [blog] —]]></summary></entry><entry><title type="html">INNHABIT Network Overview</title><link href="http://localhost:4000/blog/2025/05/26/innhabit-network.html" rel="alternate" type="text/html" title="INNHABIT Network Overview" /><published>2025-05-26T00:00:00+02:00</published><updated>2025-05-26T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/05/26/innhabit-network</id><content type="html" xml:base="http://localhost:4000/blog/2025/05/26/innhabit-network.html"><![CDATA[<h1 id="what-is-innhabit">What is INNHABIT</h1>
 <p>INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server.
 <img src="/assets/SystemDiagramAlternate.png" alt="SystemOverview" style="width:100%;" /></p>
 <blockquote>
@@ -194,7 +1177,988 @@ Some of the dynamic sites is mainly the admindashboard and insights page seen be
 <h3 id="valkey">Valkey</h3>
 <p>Valkey is a key/value datastore used to store password API keys, valued for its security and easy integration with Django and Gunicorn.
 The API keys generated, as shown in the figure below, consist of an easy-to-read identifier, a prefix to distinguish the key, and a secret 64-character long key that is randomly generated. This randomness is why salting is not necessary.
-<img src="/assets/APISections.png" alt="APIKey" style="width:100%;" /></p>]]></content><author><name>Esben Jørgensen</name></author><category term="blog" /><summary type="html"><![CDATA[What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson remotely from Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Jetson Internal architecture The software of the Jetson implement multiple threads each having a class and task assigned. A simplifyed thread description and diagram can be seen below: The figure shows all main threads and the shared resourses between them. The main program flow is a follows FrameCapturer Thread Captures frames from camera and adds them to frameQueue Detection Thread Takes frames from frameQueue, runs ML and tracking, calls Api Handler Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue, runs ML and tracking, calls Api Hander Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue. Display Thread Takes frames from displayQueue and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. DevicePoller Thread uses Api Handler Thread to poll Aggregation server for updated settings Api Handler Thread handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.]]></summary></entry><entry><title type="html">Sipeed Maix Dock M1W</title><link href="http://localhost:4000/blog/2025/05/24/setup.html" rel="alternate" type="text/html" title="Sipeed Maix Dock M1W" /><published>2025-05-24T00:00:00+02:00</published><updated>2025-05-24T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/05/24/setup</id><content type="html" xml:base="http://localhost:4000/blog/2025/05/24/setup.html"><![CDATA[<h1 id="what-is-the-maix-dock-m1w">What is the Maix Dock M1W?</h1>
+<img src="/assets/APISections.png" alt="APIKey" style="width:100%;" /></p>]]></content><author><name>Esben Jørgensen</name></author><category term="blog" /><summary type="html"><![CDATA[What is INNHABIT INNHABIT is an Entry-Exit-Tracking system, monitoring every entrance at AAU INNOVATE via Computer Vision, then sending Entry/Exit events to a Central Aggregation Server. Goal of Networking for INNHABIT Send Entry/Exit events from Jetson to Aggregation Server Store Entry/Exit events for further analysis Update setting on Jetson remotely from Aggregation Server Serve a Web Dashboard for detailed statics Serve focused statics to existing digital signage Jetson Internal architecture The software of the Jetson implement multiple threads each having a class and task assigned. A simplifyed thread description and diagram can be seen below: The figure shows all main threads and the shared resourses between them. The main program flow is a follows FrameCapturer Thread Captures frames from camera and adds them to frameQueue Detection Thread Takes frames from frameQueue, runs ML and tracking, calls Api Handler Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue, runs ML and tracking, calls Api Hander Thread if Entry/Exit is detected. Adds image with detection and tracking to displayQueue. Display Thread Takes frames from displayQueue and dispays them to either an attached monitor, x11 forwarding session, or RTSP stream. DevicePoller Thread uses Api Handler Thread to poll Aggregation server for updated settings Api Handler Thread handles all network communication, takes request/events from a queue, ensuring no event is skipped cause of other events stalling.]]></summary></entry><entry><title type="html">Ssp</title><link href="http://localhost:4000/2025/05/26/ssp.html" rel="alternate" type="text/html" title="Ssp" /><published>2025-05-26T00:00:00+02:00</published><updated>2025-05-26T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/26/ssp</id><content type="html" xml:base="http://localhost:4000/2025/05/26/ssp.html"><![CDATA[<h1 id="del-1-produktudvikling">Del 1: Produktudvikling</h1>
+<h2 id="sp1">SP1</h2>
+<h3 id="hvad-er-det-primære-formål-med-opportunity-identification-processen-og-hvad-er-de-vigtigste-output-beskriveksemplificer-hvordan-man-kan-udføre-processen">Hvad er det primære formål med opportunity identification processen og hvad er de vigtigste output? Beskriv/eksemplificer hvordan man kan udføre processen.</h3>
+<p>En del af frontend, der er forkel på vores ide og en opportunity, Ide er en impulse, opportunity er markeds tilpasset.<br />
+En god opportunity skal overkomme en kvalitets barrier.<br />
+Disse opportunities kan komme internt eller eksternt fra.<br />
+Opprtunity horizons.  Hensyn til Computeren<br />
+Horizont 1 = Små forbedringer<br />
+Horizont 2 = nye løsninger / teknologier, eller ramme et andet marked, som til børn.<br />
+Horizont 3 = Innovative løsninger, Iphone, Homeassistant, Computeren.</p>
+
+<p>Step by step<br />
+Tragt formet, tournament<br />
+<strong>Step 1:</strong> Innovation Charter, / catagori<br />
+Balance mellem katagori størrelse og begænsning og overskuelighed.<br />
+<strong>Step 2:</strong> Idea Generation<br />
+Undersøge konkurrenter, nye teknologier, snakker med kunder, studerer markedet, find ulemper med nuværende product.<br />
+<strong>Step 3:</strong> Screen Ideas
+Fjern urimelige ideer, er dette faktisk muligt.<br />
+<strong>Step 4:</strong> Uddyb gode ideer
+Undersøge similare produkter, estimere markedet, hvordan kan dette egentligt udføres, små prototyber.<br />
+<strong>Step 5:</strong> Select Candidates<br />
+Sammenlign mellem criterier, og kan vi faktisk lave dette.<br />
+<strong>Output</strong> <br />
+Key product features, business goals.</p>
+
+<p>Hvad ved jeg at jeg ikke ved, og hvad ved jeg</p>
+<h3 id="er-det-radikalt-nye-produkter-altid-det-bedste-mål-hvad-er-fordelen-og-ulempen-ved-radikalt-nye-produkter">Er det radikalt nye produkter altid det bedste mål? Hvad er fordelen og ulempen ved radikalt nye produkter?</h3>
+<p>Ikke udnyttet marked, dyrer løsning / mere udvikling / Høj risiko, ikke bevidst marked.</p>
+<h2 id="sp2">SP2</h2>
+<h3 id="hvad-kan-vanskeliggøre-indhentningen-af-customer-needs-hvorfor-er-indhentningen-af-disse-et-særligt-vigtigt-step-i-produktudviklingsprocessen">Hvad kan vanskeliggøre indhentningen af customer needs? Hvorfor er indhentningen af disse et særligt vigtigt step i produktudviklingsprocessen?</h3>
+<p>Det er vigtigt at vide hvad kunderne har brug for, da i sidste ende er det kunderne der bestemmer om produktet skal have success.<br />
+Men det kan være svært da kunder ikke altid ved hvad de vil have, og hvem er dine kunder egentligt<br />
+Sætter udgangspunkt for kravspecifikationen.<br />
+<strong>4 steps</strong> 
+<strong>Step 1</strong>  Gather Raw data<br />
+Intervies, focus grupper, observering a customers(Xbox kinect), Surveys<br />
+Der er forskel på kunder, den gennemsnitlige og elite kunder.    Jeg er elite bruger af min laptop. Pas på elite brugerne.
+Brand loyalty.
+Interview guide, hvad er miljøet, go with the flow, hver objektiv, probs.
+Man får customer statements<br />
+<strong>Step 2</strong>  Interpret Data <br />
+Det vi gjorde efter at have snakket med christoffer.
+Omskrive og fortolke kunde statements til hvad produktet kan.
+Undgå løsnings mode. Undgå must and should.
+Ikke filtrer endnu.<br />
+<strong>Step 3</strong>  Organise Needs <br />
+Grupper statements, og sorter data.
+Ikke fjern modsigende statements endnu.<br />
+<strong>Step4</strong>  Prioritise Needs<br />
+Prioriter på baggrund af hvor mange gange det er blevet sagt.</p>
+<h3 id="hvilke-andre-interessenter-kunne-være-relevante-at-indhente-krav-til-produktet-fra-hvordan-vil-du-gøre-det">Hvilke andre interessenter kunne være relevante at indhente krav til produktet fra? Hvordan vil du gøre det?</h3>
+<p>Konkurrenter(Hvad kan konkurrenterne), desk study,  Lego, kunden er forældre, barn er bruger.
+Butikker og resellers, Hvad mener vi selv mangler intern</p>
+<h2 id="sp3">SP3</h2>
+<h3 id="hvilke-typer-af-modularitet-findes-der-for-en-modulær-produktarkitektur-giv-et-par-eksempler-fra-konkrete-produkter">Hvilke typer af modularitet findes der for en modulær produktarkitektur? Giv et par eksempler fra konkrete produkter.</h3>
+<p>Platform modularitet.  Noget produkter deler kan udvikles for sig selv. F.eks VW elbil platform, så batterierne er ens. AMD’s Chiplets, som bruges i alle produkter, fra bærbar til server.
+Fuldt modulær.
+Semi modulær (smartphones er godt eksempel)
+Integral. Helt integreret.<br />
+<strong>Slot-Modular</strong> (Smarphone) Ting kan connect 1 sted på det samlede produkt.<br />
+<strong>Bus-Modular</strong> (server/desktop er lidt begge) Alt forbindes til et samlet punkt / ens interface.<br />
+<strong>Sectional-Modular</strong> (Google tingen) Alle moduler er independent, Lego, ting kan stables.</p>
+
+<h3 id="er-en-modulær-produktarkitektur-altid-en-fordel-er-det-tilfælde-hvor-en-integreret-arkitektur-er-en-fordel-giv-gerne-eksempler">Er en modulær produktarkitektur altid en fordel? Er det tilfælde hvor en integreret arkitektur er en fordel? Giv gerne eksempler.</h3>
+<p>integreret architecture kan give et “bedre” ende produkt, men kan komme med udviklings udfordringer.
+Men samtidigt kan modulær arkitektur gøre alle delene extra specialle da alle ikke behøver et overblik over hele løsningen.
+Mindre produkter. Modulær giver et formt for overhead, ligesom Object orienteret også kan gøre.
+eksempel (Ram slots er modulære, men har højere latens og laver clock speeds).
+Fordel er at man kan nemt customize til bestemt cusomer.</p>
+<h2 id="sp4">SP4</h2>
+<h3 id="i-kurset-har-vi-anvendt-en-screening--scoring-matrix-til-at-udvælge-et-endeligt-koncept-hvad-er-styrken-ved-denne-metode-hvad-kunne-alternative-metoder-være-til-at-vælge-et-koncept">I kurset har vi anvendt en ”screening &amp; scoring” matrix til at udvælge et endeligt koncept. Hvad er styrken ved denne metode? Hvad kunne alternative metoder være til at vælge et koncept?</h3>
+<p>Et godt koncept men dårligt udført kan være sucess, men dårligt koncept er altid dårligt.<br />
+Del produktet op i funktioner / behov(Bilen interrior behøves ikke at hænge sammen med motoren).<br />
+Blackbox, Input &amp; output, og hvad sker der så i denne kasse?.<br />
+Hvordan bliver dette i kassen så gjort, teknisk specifikt. Undersøg eksiterende løsninger, snak med experter, undersøg specifikke technologier.<br />
+Undersøg internt, technologisk, og brug de egenskaber gruppe medlemmerne har.<br />
+Disse koncepter kan så blive valgt ved screening &amp; scoring.<br />
+steps = Prepare matrix - Rate - Rank - Combine(Merge nogle gode ting man opdager undervejs) - Select:<br />
+Tag udgangpunkt i 1 koncept, sæt til lig 0, og sammenlign anre koncepter i forhold til dette.<br />
+Nu kan vi vægte værdierne, og derfor prioritere.<br />
+Scoring og vægtning kan hurtigt vægte ting mod preferrencer. <br />
+Det er vigtigt at have tænkt over vægtende, og ikke ændre vægtende for at prioritere andet produkt.<br />
+Kræver en god analyse af features, og krav.<br />
+På dette tidpunkt kan det være svært at vurdere hvad man bør scorer de forskellige koncepter.<br />
+Alternativ, Vi begyndte at arbejde på forskellige ting samtidigt, og løbende estimere løsninger.</p>
+<h3 id="hvad-kunne-du-gøre-for-at-øge-troværdigheden-af-de-enkelte-scorer-i-matrixen">Hvad kunne du gøre for at øge troværdigheden af de enkelte scorer i matrixen?</h3>
+<p>Understøtte dem med kilder og argumentationer, eller basere dem på customer needs undersøgelser.<br />
+Få kunder til at score koncepterne, og give deres mening på det.</p>
+<h2 id="sp5">SP5</h2>
+<h3 id="hvad-er-fordelene-ved-at-følge-en-struktureret-metode-til-produktudvikling-hvad-risikerer-man-ved-ikke-at-gøre-det">Hvad er fordelene ved at følge en struktureret metode til produktudvikling? Hvad risikerer man ved ikke at gøre det?</h3>
+<p>Man risikerer at man ender ud med et produkt der ikke lever op til kravene, eller ikke har nogle kunder.<br />
+mere…
+SP5 – Struktur i produktudvikling
+Hvad er fordelene ved at følge en struktureret metode til produktudvikling? Hvad risikerer man ved ikke at gøre det?</p>
+
+<p>Fordele:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Målrettethed og fokus – En struktureret metode sikrer, at man arbejder mod klart definerede mål, såsom kundebehov, tekniske krav og forretningsmål.
+
+Tids- og ressourceeffektivitet – Ved at følge faser som behovsanalyse, konceptudvikling, prototype og test undgår man spildarbejde.
+
+Bedre kommunikation i teamet – Struktur giver et fælles sprog og forventningsafstemning i tværfaglige teams.
+
+Dokumentation og læring – Man skaber sporbarhed og mulighed for evaluering og forbedring til fremtidige projekter.
+
+Kundecentrering – En god metode (f.eks. Stage-Gate, V-model eller Ulrich &amp; Eppinger) inkluderer kundebehov i processen, hvilket øger chancen for succes på markedet.
+</code></pre></div></div>
+
+<p>Risici ved ikke at følge en struktureret metode:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Udvikling af et produkt uden marked (ingen efterspørgsel).
+
+Fejl og omarbejdning pga. manglende kravspecifikationer.
+
+Manglende integration mellem delsystemer.
+
+Uklare roller og ansvar → dårlig teamkoordinering.
+
+Projektet løber løbsk i tid og budget. ### Hvad er nogle af de største faldgrupper som produktudviklingsteam i forbindelse med processen? Tech-demoer i stedet for rigtige produkter
+– Fokus på teknologi frem for brugerbehov. Det kan føre til, at man laver noget "smart", som ingen har brug for.
+
+Springe behovsanalysen over
+– Mange teams går direkte til løsning, uden at forstå kundens egentlige problemer. Det fører ofte til forkerte løsninger.
+
+Dårlig kravspecifikation
+– Uklare eller ikke-prioriterede krav giver konflikt senere i projektet, især ved test og implementering.
+
+Ingen iterativ test og feedback
+– Man udvikler hele produktet uden at teste det løbende. Så opdager man fejlene for sent og må redesigne.
+
+Manglende involvering af relevante interessenter
+– Hvis marketing, produktion eller kunder ikke inddrages, kan man ende med et produkt der er svært at sælge eller producere.
+
+For lidt dokumentation
+– Uden tilstrækkelig dokumentation kan man ikke overlevere viden, og fremtidig vedligehold bliver svær.
+
+Scope creep
+– Projektets mål udvides hele tiden uden kontrol, så man mister fokus og overskrider budget og tid.
+</code></pre></div></div>
+
+<h1 id="del-2-kravsspecifikation-og-system-design">Del 2: Kravsspecifikation og system design.</h1>
+<h2 id="sp6">SP6</h2>
+<h3 id="hvad-er-et-use-case-diagram-hvilke-elementer-består-det-af-hvad-bruger-man-det-til-hvornår-anvender-man-use-case-diagrammer-tegn-eller-vis-eksempeleksempler">Hvad er et use case diagram? Hvilke elementer består det af? Hvad bruger man det til? Hvornår anvender man use case diagrammer? Tegn eller vis eksempel/eksempler.</h3>
+<p>Hvad er et use case diagram?</p>
+
+<p>Et use case-diagram viser aktører (brugere eller andre systemer) og deres interaktioner (use cases) med systemet. Det beskriver funktionerne (use cases), som systemet skal levere, og hvordan brugerne interagerer med dem.<br />
+<strong>Hvilke elementer består det af?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System (grænse) – Angivet som en rektangulær boks, der indeholder use cases. Det er dét system, man beskriver.
+
+Use case (brugssituation) – En oval der beskriver en funktion (f.eks. "Log ind", "Bestil produkt").
+
+Aktør (actor) – En stick-figur, der repræsenterer en bruger eller andet system, der interagerer med systemet.
+</code></pre></div></div>
+
+<p><strong>Relationer:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Association (linje): Forbindelse mellem aktør og use case.
+
+Include: Angiver at en use case altid inkluderer en anden.
+
+Extend: Angiver at en use case nogle gange udvides med en anden, fx afhængigt af betingelser.
+</code></pre></div></div>
+
+<p><strong>Hvad bruger man det til?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Få overblik over funktionelle krav til et system.
+
+Kommunikere med interessenter (brugere, kunder, udviklere).
+
+Dokumentere brugerbehov og systemets forventede opførsel.
+
+Analyse og design af software og interaktionsflow.
+</code></pre></div></div>
+
+<p><strong>Hvornår anvender man use case-diagrammer?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tidligt i kravspecifikationsfasen i systemudvikling.
+
+Under analyse og design.
+
+Når man vil visualisere brugerinteraktioner og sikre, at alle funktioner er dækket.
+
+Som supplement til user stories og funktionelle krav ### Hvad er en use case beskrivelse? Hvad er vigtigt i en sådan beskrivelse? Hvordan relaterer disse sig til krav specifikationerne? Hvornår udarbejder man beskrivelserne? Hvem udarbejder dem? Giv eksempler. **Hvad er en use case-beskrivelse?**
+</code></pre></div></div>
+
+<p>En use case-beskrivelse er en tekstuel (detaljeret) beskrivelse af, hvordan en aktør interagerer med systemet for at opnå et bestemt mål. Hvor use case-diagrammer viser overblik, går beskrivelsen i dybden med trin-for-trin scenarier.
+<strong>Hvad er vigtigt i en use case-beskrivelse?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>En god use case-beskrivelse indeholder typisk følgende elementer:  
+Felt	Beskrivelse  
+Navn	Kort og præcis titel (f.eks. "Log ind")  
+Mål	Hvad aktøren ønsker at opnå  
+Primær aktør	Den bruger eller system der initierer use casen  
+Interessenter og behov	Hvem har interesse i funktionen og hvorfor  
+Forudsætninger	Hvad skal være opfyldt før handlingen starter  
+Efterfølgende tilstand	Hvad er opnået, hvis use casen lykkes  
+Hovedforløb (normal flow)	De vigtigste trin i interaktionen  
+Alternative forløb / Undtagelser	Hvad sker der, hvis noget går galt eller afviger  
+Frekvens (valgfrit)	Hvor ofte use casen typisk forekommer   **Hvordan relaterer use case-beskrivelser sig til kravspecifikationer?**
+
+Use case-beskrivelser konkretiserer funktionelle krav fra kravspecifikationen.
+
+De fungerer som en slags bro mellem overordnede krav og teknisk design.
+
+Gør det nemt at teste og verificere, om krav er opfyldt (basis for test cases).
+
+Hjælper med at prioritere funktionalitet baseret på brugerens behov.
+</code></pre></div></div>
+
+<p><strong>Hvornår og af hvem udarbejdes de?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Spørgsmål	Svar
+Hvornår?	I krav- og analysefasen – gerne før design og kodning starter.
+Hvem?	Typisk systemanalytikere, UX-designere, eller produktudviklere – ofte i samarbejde med kunden eller slutbrugere.
+✏️ Eksempel på use case-beskrivelse
+</code></pre></div></div>
+
+<p><strong>Use case: Bestil produkt</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mål: Kunden ønsker at bestille et produkt online.
+
+Primær aktør: Kunde
+
+Interessenter: Kunden (hurtig levering), webshop (salg), lager (ordrebehandling)
+
+Forudsætning: Kunden er logget ind og har fundet et produkt.
+
+Efterfølgende tilstand: Ordren er registreret og bekræftet.
+</code></pre></div></div>
+
+<p>Hovedforløb:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Kunden klikker på "Køb" på produktet.
+
+Systemet viser kurven og totalbeløb.
+
+Kunden klikker på "Gå til betaling".
+
+Kunden indtaster leverings- og betalingsoplysninger.
+
+Kunden klikker "Bekræft".
+
+Systemet validerer oplysningerne og opretter ordren.
+
+Kunden får bekræftelse på ordren.
+</code></pre></div></div>
+
+<p>Alternative forløb:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4a. Kunden vælger at betale med MobilePay.
+
+6a. Hvis betaling mislykkes → system viser fejl og beder om ny metode. ## SP7 ### Hvad karakteriserer gode krav? Giv eksempler på gode og dårlige krav. Hvor i V-modellen finder vi hvilke typer af krav? Med hvem udarbejder vi krav og på hvilke måde sikrer vi at vi får samtlige vigtige krav med i kravspecifikationen? **Hvad karakteriserer gode krav?**
+</code></pre></div></div>
+
+<p><strong>Gode krav skal være:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Kvalitet	Forklaring
+Entydige	Kravet skal kun kunne forstås på én måde (ingen tvetydighed).
+Testbare / Verificerbare	Det skal være muligt at afprøve, om kravet er opfyldt.
+Nødvendige	Kun krav, der har reel værdi for systemet eller brugeren.
+Tydelige og præcise	Ikke vage begreber som "hurtig", "let" eller "bedre".
+Sporbare	Man skal kunne se, hvor kravet stammer fra (f.eks. en kundeanmodning).
+Konsistente	Krav må ikke modsige hinanden.
+</code></pre></div></div>
+
+<p><strong>Eksempler på gode og dårlige krav</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Dårligt krav	Hvorfor dårligt	Godt krav (forbedret)
+"Systemet skal være hurtigt."	Uklart, subjektivt	"Systemet skal svare inden for 1 sekund i 95 % af alle tilfælde."
+"Brugeren skal nemt kunne oprette en profil."	Ikke målbart	"Brugeren skal kunne oprette en profil via en formular med maks. 5 felter."
+"Appen skal være moderne."	For vag og upræcis	"Appen skal følge Android Material Design 3 retningslinjer."
+</code></pre></div></div>
+
+<p><strong>Hvor i V-modellen findes kravene?</strong></p>
+
+<p>V-modellen beskriver systemudvikling som en proces, hvor hver fase på venstresiden har en tilsvarende testfase på højresiden. Krav findes på venstresiden i starten af udviklingen:
+Fase i V-modellen	Type krav
+Brugerbehov (toppen)	Overordnede forretnings- og brugerkrav
+Systemkrav	Funktionelle og ikke-funktionelle krav
+Designkrav	Tekniske specifikationer for hvordan kravene opfyldes</p>
+
+<p>På højresiden verificeres kravene gennem test: systemtest, integrationstest, enhedstest – baseret direkte på kravene.
+<strong>Med hvem udarbejder vi krav?</strong></p>
+
+<p>Krav udarbejdes i samarbejde med:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Slutbrugere / kunder – deres behov og ønsker er fundamentale.
+
+Forretningsanalytikere / produktledere – oversætter behov til krav.
+
+Udviklere / arkitekter – vurderer realiserbarhed.
+
+Testere – sikrer at krav kan testes.
+
+UX-designere – bidrager til brugervenlighedskrav.
+</code></pre></div></div>
+
+<p>Hvordan sikrer vi, at vi får alle vigtige krav med?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Workshops &amp; interviews med interessenter.
+
+Observationer &amp; kontekstuel analyse – se hvordan nuværende systemer bruges.
+
+Brainstorming og kravindsamlingsteknikker (f.eks. MoSCoW, Kano).
+
+Use cases og user stories – hjælper med at identificere funktionelle krav.
+
+Prototyper og mockups – skaber feedback og afdækker oversete krav.
+
+Sporbarhedsmatrix – kobler krav til test, design og forretningsmål. ### Hvilke krav har vi til vores kravspecifikation? Hvordan sikrer vi at krav til krav er opfyldt? Hvordan bruger vi krav i efterfølgende udviklingsproces? Hvordan forholder vi os til at skulle lave ændringer i krav i de efterfølgende tidsperioder i en udviklingsproces f.eks. hen mod slutningen af projektet? Giv eksempler. Hvilke krav har vi til vores kravspecifikation?
+</code></pre></div></div>
+
+<p><strong>En kravspecifikation skal være:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Krav til kravspecifikationen	Beskrivelse
+Komplet	Alle relevante funktionelle og ikke-funktionelle krav skal være med.
+Entydig	Hvert krav skal kun kunne forstås på én måde.
+Testbar	Det skal være muligt at verificere hvert krav.
+Sporbar	Hvert krav skal kunne spores til kilder (behov, interessenter) og til test, design og kode.
+Struktureret og prioriteret	Kravene skal være velorganiserede og eventuelt prioriteret (f.eks. MoSCoW: Must, Should, Could, Won’t).
+Versionsstyret	Man skal kunne følge ændringer over tid (hvem ændrede hvad og hvornår). **Hvordan sikrer vi, at “krav til krav” er opfyldt?**
+
+Review og godkendelse
+– Gennemgå kravene med interessenter og få dem godkendt. Brug evt. checklister (f.eks. IEEE-830).
+
+Sporbarhedsmatrix
+– Kortlæg alle krav til relaterede designbeslutninger og testcases.
+
+Brug af skabeloner og værktøjer
+– Kravspecificeringsværktøjer (f.eks. Jira, IBM DOORS) hjælper med konsistens, dokumentation og versionsstyring.
+
+Testbarhedsanalyse
+– Involvér testere tidligt: “Kan dette krav testes?” Hvis ikke, skal det omskrives.
+
+Roller og ansvar
+– Tydelige ejere af kravene sikrer ansvar for indhold og ændringer.
+</code></pre></div></div>
+
+<p><strong>Hvordan bruger vi krav i den efterfølgende udviklingsproces?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Kravene er fundamentet for hele udviklingsprocessen:
+Procesfase	Brug af krav
+Design	Udviklere og arkitekter bruger krav til at beslutte systemets struktur og komponenter.
+Implementering	Kode baseres på funktionelle krav.
+Test	Testcases laves ud fra krav (accepttest, systemtest).
+Verifikation og validering	Bruges til at afgøre, om det udviklede system matcher krav og behov.
+Dokumentation og overlevering	Krav dokumenterer, hvad systemet skal kunne – bruges til support og videreudvikling. **Hvordan håndterer vi ændringer i krav sent i udviklingsforløbet?**
+</code></pre></div></div>
+
+<p>Ændringer sker ofte – men sent i processen er de dyrere og risikofyldte.
+Sådan håndteres det:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Change Request-proces
+– Formaliseret måde at foreslå, evaluere og godkende ændringer.
+
+Impact analysis
+– Hvad påvirker ændringen? Tid, test, funktionalitet, afhængigheder? Dette vurderes før godkendelse.
+
+Sporbarhed
+– Man kan hurtigt identificere, hvilke komponenter og testcases der berøres.
+
+Kommunikation
+– Informér hele teamet om ændringer (dev, test, design, kunde).
+
+Agile eller iterativ udvikling
+– Hvis muligt: arbejd i iterationer, så krav kan justeres løbende med mindre risiko.
+</code></pre></div></div>
+
+<p><strong>Eksempler på ændringer i krav og deres konsekvenser</strong><br />
+Ændring i krav	Konsekvens	Håndtering
+“Brugeren skal kunne betale med MobilePay” tilføjes sent	Integration med ny betalingsgateway → ekstra udvikling og test	Change request, teknisk vurdering, planjustering<br />
+Ændring af svartid fra 2 sek til 0.5 sek	Kræver optimering af backend og database	Reprioritering af performancefokus, evt. delvis opfyldelse<br />
+Krav om at systemet skal virke offline	Ændrer hele arkitekturen	Overvej version 2, lav business case for værdi/kost</p>
+<h2 id="sp8">SP8</h2>
+<h3 id="hvordan-deler-man-effektivt-krav-op-i-funktionelle-moduler-hvad-definerer-et-modul-hvad-kan-vi-bruge-modulariseringen-til-giv-eksempler-gerne-på-tavle">Hvordan deler man effektivt krav op i funktionelle moduler? Hvad definerer et modul? Hvad kan vi bruge modulariseringen til? Giv eksempler, gerne på tavle.</h3>
+<p><strong>Hvordan deler man krav op i funktionelle moduler?</strong><br />
+<strong>Grundidé:</strong></p>
+
+<p>Du opdeler systemet i mindre funktionelle enheder (moduler), som hver især dækker ét specifikt område af funktionaliteten.
+<strong>Metode:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Identificér hovedfunktioner / use cases
+– Hvad skal systemet kunne?
+
+Gruppér relaterede krav
+– Krav, der hører sammen funktionelt, samles.
+
+Opdel efter ansvar og grænseflader
+– Hvert modul skal have et klart ansvar og minimalt overlap.
+
+Overvej brugerroller og systemaktører
+– Hvad har forskellige brugere brug for at gøre? Dette guider opdelingen.
+</code></pre></div></div>
+
+<p><strong>Hvad definerer et modul?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Et modul er:
+Egenskab	Forklaring
+Afgrænset funktionelt område	Løser én tydelig opgave (f.eks. "Brugerhåndtering")
+Indeholder relaterede krav og funktioner	F.eks. "Login", "Opret bruger", "Nulstil adgangskode"
+Har en veldefineret grænseflade (API eller UI)	Moduler kommunikerer gennem veldefinerede kald eller skærme
+Kan udvikles og testes uafhængigt	Gør teams mere effektive og reducerer kompleksitet
+</code></pre></div></div>
+
+<p><strong>Hvad kan vi bruge modularisering til?</strong>
+Fordel	Beskrivelse<br />
+✅ Overblik	Krav bliver lettere at forstå og styre<br />
+✅ Genbrug	Moduler kan genbruges i andre projekter<br />
+✅ Parallelt arbejde	Teams kan arbejde på forskellige moduler samtidigt<br />
+✅ Fejlisolering	Fejl lokaliseres hurtigere<br />
+✅ Ændringer bliver lettere	Ændringer i ét modul påvirker ikke hele systemet<br />
+✅ Skalerbarhed	Systemet kan lettere vokse med nye funktioner</p>
+<h3 id="hvad-er-en-grænseflade-hvordan-bliver-man-enig-om-en-grænseflade-hvem-er-involveret-i-at-definere-grænseflader-hvilke-fordeleulemper-er-der-ved-at-definere-grænseflader-tidligtsent-i-et-projektforløb-giv-eksempler">Hvad er en grænseflade? Hvordan bliver man enig om en grænseflade? Hvem er involveret i at definere grænseflader? Hvilke fordele/ulemper er der ved at definere grænseflader tidligt/sent i et projektforløb? Giv eksempler</h3>
+
+<p><strong>Typer af grænseflader:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type	Eksempel
+Teknisk grænseflade	API mellem backend og frontend
+Fysisk grænseflade	Stikforbindelse, skærm, knap
+Brugergrænseflade (UI)	App-skærmbilleder, menuer, formularer
+Procesgrænseflade	Overlevering mellem to teams eller systemer i et workflow **Hvordan bliver man enig om en grænseflade?**
+
+Identificér behov og afhængigheder
+– Hvad har de to parter brug for fra hinanden?
+
+Samarbejde og kommunikation
+– Design, software, hardware, test og brugerrepræsentanter skal involveres.
+
+Brug specifikationer og diagrammer
+– Brug f.eks.:
+
+    Interface-specifikationer (API-dokumenter, wireframes)
+
+    Sekvensdiagrammer, I/O-skemaer
+
+Prototyper og mockups
+– Visualisering af interaktion hjælper parterne med at forstå grænsefladen.
+</code></pre></div></div>
+
+<p><strong>Hvem er involveret i at definere grænseflader?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rolle	Bidrag
+Systemarkitekt	Fastlægger overordnede tekniske grænseflader
+Softwareudviklere	Definerer f.eks. API’er mellem komponenter
+Hardwareudviklere	Ved fysiske grænseflader (sensorer, knapper, porte)
+UX-designere	Ved brugergrænseflader (UI)
+Testere	Sikrer at grænsefladen kan testes og valideres
+Kunder/brugere	Ved brugerinteraktion eller systemintegration
+⏱️ Fordele og ulemper ved tidlig/sen definition
+Timing	Fordele	Ulemper
+Tidlig	- Gør parallel udvikling muligt
+- Giver klar struktur
+- Giver testmuligheder tidligere	- Risiko for ændringer senere
+- Kan låse fast i et forkert design
+Sen	- Mere viden og erfaring
+- Bedre tilpasning til reelle behov	- Forsinker udvikling
+- Skaber afhængigheder og flaskehalse
+- Øget risiko for misforståelser **Eksempler** **Teknisk eksempel (software):**
+
+Et API mellem en webshop-frontend og backend:
+
+    Grænsefladen definerer kald som: GET /products, POST /checkout
+
+    Frontend- og backendteams arbejder parallelt, fordi grænsefladen er defineret tidligt
+</code></pre></div></div>
+
+<p><strong>Fysisk eksempel (produktdesign):</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>En elektrisk motor med en standardiseret stikforbindelse til styring:
+
+    Grænsefladen er stiktypen + datasignaler
+
+    Motor og styringsmodul kan udvikles hver for sig
+</code></pre></div></div>
+
+<p><strong>Brugergrænseflade:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>En app har et loginmodul, som leverer brugerinfo til resten af systemet
+
+    UI og backend skal blive enige om: Hvilke felter vises? Hvad sendes?
+</code></pre></div></div>
+
+<h1 id="del-3-implementering-og-test">Del 3: Implementering og test</h1>
+<h2 id="sp9">SP9</h2>
+<h3 id="hvad-er-kodestil-og-kodestruktur-for-hvem-er-dette-vigtigt-hvad-har-i-gjort-i-jeres-projekt-hvordan-bliver-man-enige-om-feks-brug-af-white-space-eller-tabs-giv-eksempler-på-forskellige-kodestilarter-der-kan-øge-læsevenligheden-og-eksempler-på-det-modsatte-der-mindsker-læsevenligheden">Hvad er kodestil og kodestruktur? For hvem er dette vigtigt? Hvad har I gjort i jeres projekt? Hvordan bliver man enige om f.eks. brug af white space eller tab’s? Giv eksempler på forskellige kodestilarter der kan øge læsevenligheden, og eksempler på det modsatte (der mindsker læsevenligheden).</h3>
+<p><strong>Hvad er kodestil og kodestruktur?</strong>
+<strong>Kodestil</strong></p>
+
+<p>Kodestil handler om hvordan koden ser ud – det visuelle og sproglige udtryk. Det dækker fx:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Brug af indrykning (tabs vs. spaces)
+
+Navngivning af variabler og funktioner (camelCase, snake_case)
+
+Brug af mellemrum og linjeskift
+
+Kommentarstil og placering
+
+Placering af {} i funktioner og kontrolstrukturer
+</code></pre></div></div>
+
+<p>Eksempel på to forskellige kodestile i JavaScript:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Kodestil 1 (kompakt, men lidt sværere at læse)
+function add(a,b){return a+b;}
+
+// Kodestil 2 (mere læsbar)
+function add(a, b) {
+  return a + b;
+}
+</code></pre></div></div>
+
+<p><strong>Kodestruktur</strong></p>
+
+<p>Kodestruktur handler om hvordan koden er organiseret logisk:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Filstruktur (mappestruktur)
+
+Moduler og komponenter
+
+Funktionsopdeling (små, genanvendelige funktioner)
+
+Separation of concerns (logik adskilt fra præsentation og data)
+</code></pre></div></div>
+
+<p>Eksempel:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>projekt/
+├── controllers/
+│   └── userController.js
+├── models/
+│   └── userModel.js
+├── routes/
+│   └── userRoutes.js
+└── app.js
+</code></pre></div></div>
+
+<p><strong>For hvem er dette vigtigt?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>For hele teamet: Giver fælles sprog og færre misforståelser.
+
+For fremtidige udviklere: Koden bliver nemmere at vedligeholde.
+
+For review og samarbejde: Gør kodegennemgang hurtigere og mere effektiv.
+
+For test og debugging: En ensartet stil gør det nemmere at finde fejl.
+</code></pre></div></div>
+
+<p>💬 Hvordan bliver man enige om stil (fx tabs vs. spaces)?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Læg fælles retningslinjer fra starten:
+
+    Brug fx Google Style Guide, Airbnb JS Guide, PEP8 (Python) osv.
+
+Automatisér med linters og formateringsværktøjer:
+
+    Eksempler: ESLint, Prettier, Black (Python), clang-format
+
+Lav en README.md eller CONTRIBUTING.md med stilregler
+
+Brug Git pre-commit hooks til at tjekke stil før kode pushes
+</code></pre></div></div>
+
+<p>✅ Eksempler på god kodestil (læsevenlig)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def calculate_total(price, tax_rate):
+    """Calculate total price including tax."""
+    return price * (1 + tax_rate)
+
+Klar funktion
+
+Gode navne
+
+Kommentar (docstring)
+
+Lige mellemrum
+</code></pre></div></div>
+
+<p>❌ Eksempler på dårlig kodestil (ulæselig)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def ct(p,t):return p*(1+t)
+
+Dårlige navne
+
+Ingen mellemrum
+
+Ingen kommentar
+
+Alt på én linje kamelCase, navngivning, function størrelse, nasa's krav. Vi havde både python og C++, python blev tjekket via github action, c++ var mere skrevet så det man skrev lignede det der allerede stod. Manglede generelt måske lidt konsistens. ### Hvad er objekt orienteret programmering? Hvad er en klasse i forhold til et objekt? Hvad er et klassediagram? Tegn gerne et simpelt et på tavlen og diskuter ud fra det tegnede diagram. **Hvad er objektorienteret programmering (OOP)?**
+</code></pre></div></div>
+
+<p>Objektorienteret programmering er en programmeringsparadigme, hvor man strukturerer kode omkring objekter, som repræsenterer ting, begreber eller enheder i virkeligheden.
+<strong>Nøgleprincipper i OOP:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Princip	Forklaring
+Indkapsling	Data og funktioner gemmes sammen i objekter
+Arv	En klasse kan arve egenskaber fra en anden
+Polymorfi	Objekter kan opføre sig forskelligt, selvom de deler samme interface
+Abstraktion	Skjuler kompleksitet og viser kun nødvendig information **Hvad er en klasse og et objekt?**
+Begreb	Forklaring
+Klasse	En skabelon eller blueprint for at lave objekter
+Objekt	En konkret instans af en klasse med sine egne data
+</code></pre></div></div>
+
+<p>Eksempel i Python:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Dog:               # Klasse
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+my_dog = Dog("Fido")     # Objekt (instans af klassen)
+my_dog.bark()            # Output: Fido says woof!
+</code></pre></div></div>
+
+<p><strong>Hvad er et klassediagram?</strong></p>
+
+<p>Et klassediagram er en grafisk måde at vise klasser og deres relationer på. Det er en del af UML (Unified Modeling Language) og bruges i designfasen.
+Klassediagrammet viser:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Klasser
+
+Attributter (datafelter)
+
+Metoder (funktioner)
+
+Relationer mellem klasser (arv, association, komposition osv.)
+</code></pre></div></div>
+
+<p>Tegn et simpelt klassediagram på tavlen
+Eksempel: Et system med Person og Student</p>
+
+<p>+————–+
+|   Person     |
++————–+
+| - name       |
+| - age        |
++————–+
+| + greet()    |
++————–+
+       ▲
+       |
+   inherits
+       |
++————–+
+|   Student    |
++————–+
+| - studentID  |
++————–+
+| + study()    |
++————–+</p>
+
+<p>Forklaring:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Person er en superklasse
+
+Student arver fra Person
+
+Student har en ekstra attribut og metode
+
+greet() findes i Person og kan bruges af Student ## SP10 ### Hvad er white boks test? Hvornår anvender vi white boks test og i hvilke sammenhæng. Hvad er en path test og hvorfor er en 100% path testing stort set altid umulig at gennemføre? Tegn et flowgraph diagram på tavlen og forklar hvad en branch test er **Hvad er white-box test?**
+</code></pre></div></div>
+
+<p>White-box test (eller strukturtest) er en testmetode, hvor man tester et programs interne struktur og logik. Man kigger ”ind i koden” og bruger sin viden om, hvordan programmet er bygget.
+<strong>Formålet:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Teste alle logiske grene og kontrolstrukturer
+
+Sikre at alle veje i koden fungerer som forventet
+
+Afsløre fx:
+
+    Ubrugte kodelinjer
+
+    Fejl i loops og betingelser
+
+    Forkert håndtering af kanttilfælde
+</code></pre></div></div>
+
+<p><strong>Hvornår bruger man white-box testing – og i hvilke sammenhænge?</strong>
+Bruges typisk ved	Eksempler<br />
+Unit testing	Test af enkeltfunktioner<br />
+Integration testing	Når moduler integreres og man vil teste flow mellem dem<br />
+Ved kritisk kode	F.eks. sikkerhed, beregning, pengeoverførsel<br />
+Automatiseret test	Fx med værktøjer som JUnit, Pytest, osv.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>White-box testing bruges tidligt i udviklingen af udviklere og QA, og supplerer black-box tests (som kun ser på input/output uden at kende koden).
+</code></pre></div></div>
+
+<p><strong>Hvad er path testing?</strong></p>
+
+<p>Path testing handler om at teste forskellige stier igennem et program – altså de mulige kørselsforløb gennem kontrolstrukturen.<br />
+Eksempel:</p>
+
+<p>Hvis en funktion har en if-else og et while-loop, kan der være mange forskellige måder, koden kan køres på afhængigt af input.<br />
+Hvorfor er 100% path testing næsten umuligt?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Antallet af mulige stier vokser eksponentielt med antal beslutninger
+
+Nogle stier kan være umulige at nå pga. logik
+
+Loops med forskellige antal gentagelser giver uendelige kombinationer
+
+Det ville kræve enormt mange testcases og være for tidskrævende
+</code></pre></div></div>
+
+<p><strong>Hvad er en branch test?</strong></p>
+
+<p>Branch testing er en simplere form for path testing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Her tester man, at alle grene (branches) i programmet bliver kørt mindst én gang
+
+Dvs. hver if, else, case, while, osv. bliver aktiveret i en test
+</code></pre></div></div>
+
+<p>Branch testing sikrer, at alle beslutningspunkter i programmet testes.<br />
+Tegn et simpelt flowgraph diagram (til tavle):<br />
+Kodeeksempel:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def check(value):
+    if value &gt; 0:
+        print("Positive")
+    else:
+        print("Non-positive")
+</code></pre></div></div>
+
+<p>Flowgraph diagram:</p>
+
+<p>[Start]
+      |
+     (1)
+      |
+    [value &gt; 0]
+     /     <br />
+   (2)     (3)
+   |        |
+[print P] [print NP]
+   \       /
+    (4) [Slut]</p>
+
+<p>Forklaring:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(1): Start af funktion
+
+(2): Gren for value &gt; 0
+
+(3): Gren for else
+
+(4): Samlet slutpunkt
+
+For branch test skal du have mindst:
+
+    Ét test input hvor value &gt; 0
+
+    Ét test input hvor value &lt;= 0 ### Hvad er debugning? Hvordan bruger man en debugger (princippet)? Hvornår bruger man en debugger? Forklar ud fra et af de tre kodestumper givet på moodle, hvordan du vil white boks teste koden. Vis gerne på laptop hvis du har den med. **Hvad er debugging?**
+</code></pre></div></div>
+
+<p>Debugging er processen, hvor man finder og retter fejl (bugs) i sin kode. Det kan både være syntaksfejl, logiske fejl, runtime-fejl eller uventet adfærd.
+<strong>Målet:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Forstå hvor og hvorfor noget går galt
+
+Identificere årsagen og ikke kun symptomet
+
+Lave rettelser, så koden opfører sig korrekt
+</code></pre></div></div>
+
+<p><strong>Hvordan bruger man en debugger? (princip)</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>En debugger er et værktøj, der gør det muligt at køre koden trin for trin, observere værdier og indsætte breakpoints.
+Typiske funktioner i en debugger:
+Funktion	Beskrivelse
+Breakpoint	Pause i koden – her stopper eksekveringen
+Step over	Kører næste linje kode, men hopper over funktionkald
+Step into	Går ind i en funktion og viser dens kode
+Step out	Hopper ud af en funktion igen
+Watch/Inspect	Se værdien af variabler live
+Call stack	Viser hvilke funktioner, der er kaldt, og i hvilken rækkefølge
+Debuggere findes i fx:
+
+VS Code, PyCharm, Eclipse, Xcode
+
+Indbygget i browserens devtools (til JS)
+
+CLI (fx pdb i Python, gdb i C)
+</code></pre></div></div>
+
+<p><strong>Hvornår bruger man en debugger?</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Situation	Eksempel
+Når programmet crasher uden tydelig årsag	Segfault, NoneType error
+Når noget opfører sig forkert	En funktion returnerer et forkert resultat
+Når man vil forstå andres eller egen kompleks kode	Trinvis analyse
+Ved white-box testing	Når man systematisk tester kontrolstrukturer ## SP11 ### Hvad er en black box test? Forklar princippet bag black box tests. Er det realistisk at risikere at en komplet test skal gennemføre 10^100 kombinationsmuligheder af input værdier – hvorfor/hvorfor ikke? Antag det er, hvordan sikrer du så at testen kan gennemføres på realistisk kort tid? Argumenter for hvorfor din metode vil være bullet-proof. Ved sidste spørgsmål, tag gerne udgangspunkt i en løsning fra opgave 1. **Hvad er en Black Box Test?**
+</code></pre></div></div>
+
+<p>Black box test (også kaldet funktionsbaseret test) er en testmetode, hvor du tester systemets funktionalitet udefra – altså uden at kende den interne kode eller struktur.<br />
+<strong>Princippet bag black box testing</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fokus er på input og output: Giver systemet det rigtige output for det givne input?
+
+Tester typisk:
+
+    Funktionalitetskrav
+
+    Brugerinteraktion
+
+    Grænseværdier
+
+    Fejlhåndtering **Du skriver testcases baseret på kravspecifikationen og tester, om programmet opfører sig som forventet.**     **Er 10^100 kombinationsmuligheder – realistisk?**  
+</code></pre></div></div>
+
+<p>Nej, det er komplet urealistisk.</p>
+
+<p>Et eksempel:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Forestil dig et system der tager 100 inputfelter, og hvert felt kan have 10 værdier → 1010010100 kombinationer = mere end antallet af atomer i universet.
+</code></pre></div></div>
+
+<p><strong>Så:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Det er umuligt at teste alle kombinationer
+
+Det vil tage uendelig lang tid og regnekraft
+</code></pre></div></div>
+
+<p><strong>✅ Hvordan tester vi alligevel på realistisk tid?</strong></p>
+
+<p>Ved at bruge strategiske metoder:</p>
+<ol>
+  <li>
+    <p>Ækvivalensklasser</p>
+
+    <p>Del input i grupper, hvor du forventer samme adfærd</p>
+
+    <p>Test kun én værdi pr. gruppe</p>
+  </li>
+</ol>
+
+<p>🔧 Eksempel: Hvis alder skal være 18–100, så test:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Undergrænse: 17 (ulovlig)
+
+Gyldig: 25
+
+Overgrænse: 101 (ulovlig)
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Grænseværditest (Boundary Value Analysis)</p>
+
+    <p>Fejl sker oftest ved grænser, fx 0, 1, max</p>
+
+    <p>Test fx værdier: min-1, min, min+1, max-1, max, max+1</p>
+  </li>
+  <li>
+    <p>Fejlspekulation / Edge cases</p>
+
+    <p>Brug erfaring og viden om typiske fejl</p>
+
+    <p>Eksempler: tom input, null, ekstremt store/små tal</p>
+  </li>
+  <li>
+    <p>Risiko-baseret test</p>
+
+    <p>Prioritér test på funktioner der er forretningskritiske eller fejl-udsatte</p>
+  </li>
+</ol>
+
+<p>🛡️ Argument: Hvorfor er dette “bulletproof”?</p>
+
+<p>Det er ikke muligt at sikre 100% korrekthed i alle situationer, men:</p>
+
+<p>✅ Disse metoder minimerer risikoen for kritiske fejl
+✅ De fokuserer indsatsen på de vigtigste og mest fejl-udsatte områder
+✅ De gør det muligt at teste hurtigt og effektivt med høj dækning
+✅ Kombineret med white-box tests, får du både intern og ekstern testdækning
+🧪 Eksempel: BubbleSort fra opgave 1</p>
+
+<p>Krav:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BubbleSort skal sortere listen i stigende orden
+</code></pre></div></div>
+
+<p>Black box test cases:
+Test Case	Input	Forventet Output
+Tom liste	[]	[]
+Én værdi	[5]	[5]
+Allerede sorteret	[1, 2, 3]	[1, 2, 3]
+Omvendt sorteret	[3, 2, 1]	[1, 2, 3]
+Dobbeltværdier	[2, 2, 1]	[1, 2, 2]</p>
+
+<p>⚠️ Bemærk: Her kender vi ikke hvordan koden er lavet (black box), men vi ved hvordan den skal opføre sig.</p>
+<h3 id="hvis-noget-kode-ser-ud-til-at-virke-er-du-så-helt-sikker-hvordan-sikrer-du-dig-at-du-også-vil-have-den-kode-til-at-være-ansvarlig-for-næste-flytur-du-selv-skal-på-beskriv-hvordan-du-fandt-fejlen-i-det-kode-der-blev-givet-i-opgave-2-er-du-sikker-på-du-fandt-alle-fejl-argumenter-hvorfor-du-er-sikke">Hvis noget kode ser ud til at virke, er du så helt sikker? Hvordan sikrer du dig, at du også vil have den kode til at være ansvarlig for næste flytur du selv skal på? Beskriv hvordan du fandt fejlen i det kode der blev givet i opgave 2. Er du sikker på du fandt ALLE fejl? Argumenter hvorfor du er sikke</h3>
+<p><strong>Hvis noget kode ser ud til at virke – er man så helt sikker?</strong></p>
+
+<p>Nej – aldrig.</p>
+
+<p>At koden ser ud til at virke, betyder kun, at den virker i de tilfælde, du har testet den.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Men hvad med alle de utestede situationer, inputkombinationer, kanttilfælde eller fejlscenarier?
+</code></pre></div></div>
+
+<p>Når det handler om kritiske systemer, som fx en flyver, så er “det virker på min maskine” ikke godt nok.
+✅ Hvordan sikrer man sig kvalitet og sikkerhed?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Grundig test:
+
+    Brug både black box og white box tests
+
+    Test grænsetilfælde, fejlscenarier, store input, tomme input, uventede input
+
+Code review:
+
+    Flere øjne opdager flere fejl
+
+    Du får feedback på både logik og struktur
+
+Statisk analyse:
+
+    Brug værktøjer der automatisk analyserer koden for potentielle fejl (f.eks. pylint, mypy, flake8)
+
+Formal verification (i kritiske systemer):
+
+    Matematiske beviser for at koden opfører sig korrekt
+
+Test coverage:
+
+    Hvor meget af koden bliver faktisk ramt af tests? (Fx med coverage.py)
+</code></pre></div></div>
+
+<p>🐛 Hvordan fandt vi fejlene i opgave 2?</p>
+
+<p>Vi gennemgik koden linje for linje, og:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Brugte white-box teknik til at se på intern logik
+
+Spottede:
+
+    Forkert abs(...) brugt i sammenligning
+
+    Forkert initialisering og opdatering af swapped i bubble sort
+
+    Logiske fejl i rekursiv tilgang → risiko for uendelig løkke
+
+    Misforståelse af sorteringsretning
+
+    Manglende input() validering
+</code></pre></div></div>
+
+<p>❓Er vi sikre på, at vi har fundet ALLE fejl?</p>
+
+<p>Nej – men vi har reduceret risikoen betydeligt.</p>
+
+<p>Vi kan ikke 100% garantere, at der aldrig er fejl. Der kan stadig være:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Edge cases vi ikke har testet
+
+Performance-problemer på store inputs
+
+Fejl ved flydende tal, NaN, inf, etc.
+</code></pre></div></div>
+
+<p>Men:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Vi har anvendt systematiske metoder
+
+Vi har lavet grundige test og kontrol
+
+Og vi har lavet logiske forbedringer i strukturen
+</code></pre></div></div>
+
+<p>Det gør os trygge ved funktionaliteten, men vi ville stadig ikke bruge det i en flyver uden meget mere test og certificering.
+🧠 Konklusion</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>At være professionel udvikler betyder ikke at “tro” koden virker – det betyder at dokumentere og teste, indtil man ved, at den virker — i hvert fald under de definerede krav og forudsætninger.
+</code></pre></div></div>]]></content><author><name>Esben Jørgensen</name></author><summary type="html"><![CDATA[Del 1: Produktudvikling SP1 Hvad er det primære formål med opportunity identification processen og hvad er de vigtigste output? Beskriv/eksemplificer hvordan man kan udføre processen. En del af frontend, der er forkel på vores ide og en opportunity, Ide er en impulse, opportunity er markeds tilpasset. En god opportunity skal overkomme en kvalitets barrier. Disse opportunities kan komme internt eller eksternt fra. Opprtunity horizons. Hensyn til Computeren Horizont 1 = Små forbedringer Horizont 2 = nye løsninger / teknologier, eller ramme et andet marked, som til børn. Horizont 3 = Innovative løsninger, Iphone, Homeassistant, Computeren.]]></summary></entry><entry><title type="html">Sipeed Maix Dock M1W</title><link href="http://localhost:4000/blog/2025/05/24/setup.html" rel="alternate" type="text/html" title="Sipeed Maix Dock M1W" /><published>2025-05-24T00:00:00+02:00</published><updated>2025-05-24T00:00:00+02:00</updated><id>http://localhost:4000/blog/2025/05/24/setup</id><content type="html" xml:base="http://localhost:4000/blog/2025/05/24/setup.html"><![CDATA[<h1 id="what-is-the-maix-dock-m1w">What is the Maix Dock M1W?</h1>
 <p><img src="/assets/Maix-dock.jpg" alt="Maix Dock M1W" style="width:60%;" /></p>
 
 <p>The Maix Dock M1W is a small RISC-V based Micro-controller, with the main point of interest being the integrated NPU called KPU. 

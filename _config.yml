@@ -4,3 +4,7 @@ author: Esben Jørgensen
 description: Blog for all my projects that need it
 baseurl: "/blog"
 
+
+include:
+  - _inludes/katex.html
+

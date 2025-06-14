@@ -5,7 +5,7 @@ title: A Place of Experimentation
 By a Computer Engineering Student
 
 ---
-
+{% include katex.html %}
 ## Latest Posts
 
 <ul>
